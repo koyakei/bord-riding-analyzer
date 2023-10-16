@@ -6,19 +6,56 @@
 //
 
 import SwiftUI
-
+import Spatial
 struct ContentView: View {
+    @StateObject var mpcManager : MPCManager
+    @StateObject var mPCNIDelegateManager : MPCNIDelegateManager
+    @StateObject var boardSideBodyMotionReciever : BoardSideBodyMotionReciever
+    @StateObject var inclineCoM : InclineCoM
+    
+    let kneeAngle: KneeAngle = KneeAngle()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+            TextField("プレースホルダー", text: $mpcManager.message)
+            Button("sendm"){
+                mpcManager.sendMessage()
+            }
+            
+            HStack{
+                Text("内倒度合い")
+                Text(inclineCoM.gravityHorizontalDistanceFromSkiCenterToCoM.f2)
+                
+            }
+            HStack{
+                Text("谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか")
+                Text(inclineCoM.谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか.f2)
+            }
+            
+            Text(mPCNIDelegateManager.uwbMeasuredData?.realDistance.realPoint3DByCentimeter.description ?? "nasi").font(.title)
+            
+            
+            VStack{
+                if let receivedTime = mPCNIDelegateManager.uwbMeasuredData?.timeStamp {
+                    Text((receivedTime - Date.now.timeIntervalSince1970).f2)
+                }
+               
+            }
+            Button("start uwb"){
+                mPCNIDelegateManager.shareMyDiscoveryToken()
+            }
+            Text(
+                boardSideBodyMotionReciever.beforeOneTurnAT.f2
+            )
+            VStack{
+                Text("knee angle")
+                Text(kneeAngle.data(bodyUWBMeasuredPoint: mPCNIDelegateManager.uwbMeasuredData?.realDistance ?? Point3D()).degrees.f2
+                ).font(.title)
+            }
+        }.onAppear(perform: {
+            mpcManager.startup()
+            mPCNIDelegateManager.startup()
+        })
     }
 }
 
-#Preview {
-    ContentView()
-}
+

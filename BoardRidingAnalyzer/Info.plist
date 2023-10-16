@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSHealthShareUsageDescription</key>
+    <string>読み込み許可を求めるメッセージdssa</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>書き込み許可を求めるメッセージ</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>NSNearbyInteractionAllowOnceUsageDescription</key>
+	<string>motion</string>
+	<key>NSNearbyInteractionUsageDescription</key>
+	<string>motion</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>mc</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>bt</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_your-service._tcp</string>
+		<string>_your-service._udp</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>bluetooth-peripheral</string>
+		<string>external-accessory</string>
+		<string>fetch</string>
+		<string>location</string>
+		<string>nearby-interaction</string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
+</dict>
+</plist>

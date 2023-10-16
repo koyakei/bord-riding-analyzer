@@ -7,6 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA27B8C12AD23436006E442B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA27B8C02AD23436006E442B /* MultipeerConnectivity.framework */; };
+		BA27B8C22AD23451006E442B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA27B8C02AD23436006E442B /* MultipeerConnectivity.framework */; };
+		BA27B8C42AD2345B006E442B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA27B8C32AD2345B006E442B /* CoreMotion.framework */; };
+		BA27B8D12AD2389A006E442B /* MPCSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8D02AD2389A006E442B /* MPCSession.swift */; };
+		BA27B8D22AD2389A006E442B /* MPCSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8D02AD2389A006E442B /* MPCSession.swift */; };
+		BA27B8D42AD23F6C006E442B /* MPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8D32AD23F6C006E442B /* MPCManager.swift */; };
+		BA27B8D52AD23F6C006E442B /* MPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8D32AD23F6C006E442B /* MPCManager.swift */; };
+		BA27B8D82AD249D1006E442B /* MPCNIDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8D72AD249D1006E442B /* MPCNIDelegateManager.swift */; };
+		BA27B8D92AD249D1006E442B /* MPCNIDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8D72AD249D1006E442B /* MPCNIDelegateManager.swift */; };
+		BA27B8DD2AD253CF006E442B /* UWBMeasuredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8DC2AD253CF006E442B /* UWBMeasuredData.swift */; };
+		BA27B8DE2AD253CF006E442B /* UWBMeasuredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8DC2AD253CF006E442B /* UWBMeasuredData.swift */; };
+		BA27B8DF2AD253CF006E442B /* UWBMeasuredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8DC2AD253CF006E442B /* UWBMeasuredData.swift */; };
+		BA27B8E32AD25424006E442B /* NINearbyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E22AD25424006E442B /* NINearbyObject.swift */; };
+		BA27B8E42AD25424006E442B /* NINearbyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E22AD25424006E442B /* NINearbyObject.swift */; };
+		BA27B8E52AD25424006E442B /* NINearbyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E22AD25424006E442B /* NINearbyObject.swift */; };
+		BA27B8F42AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */; };
+		BA27B8F52AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */; };
+		BA27B8F62AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */; };
+		BA27B8FA2AD25E50006E442B /* PhysicsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */; };
+		BA27B8FB2AD25E50006E442B /* PhysicsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */; };
+		BA27B8FC2AD25E50006E442B /* PhysicsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */; };
+		BA27B9032AD25E50006E442B /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EB2AD25E4E006E442B /* Point3D.swift */; };
+		BA27B9042AD25E50006E442B /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EB2AD25E4E006E442B /* Point3D.swift */; };
+		BA27B9052AD25E50006E442B /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EB2AD25E4E006E442B /* Point3D.swift */; };
+		BA27B9062AD25E50006E442B /* AngleShifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */; };
+		BA27B9072AD25E50006E442B /* AngleShifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */; };
+		BA27B9082AD25E50006E442B /* AngleShifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */; };
+		BA27B90C2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
+		BA27B90D2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
+		BA27B90E2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
+		BA27B90F2AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */; };
+		BA27B9102AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */; };
+		BA27B9112AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */; };
+		BA27B9152AD25E50006E442B /* CMDeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */; };
+		BA27B9162AD25E50006E442B /* CMDeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */; };
+		BA27B9172AD25E50006E442B /* CMDeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */; };
+		BA27B9182AD25E50006E442B /* CMQuaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F22AD25E50006E442B /* CMQuaternion.swift */; };
+		BA27B9192AD25E50006E442B /* CMQuaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F22AD25E50006E442B /* CMQuaternion.swift */; };
+		BA27B91A2AD25E50006E442B /* CMQuaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F22AD25E50006E442B /* CMQuaternion.swift */; };
+		BA27B91B2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F32AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift */; };
+		BA27B91C2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F32AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift */; };
+		BA27B91D2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F32AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift */; };
+		BA27B9272AD2D691006E442B /* DeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9262AD2D691006E442B /* DeviceMotion.swift */; };
+		BA27B9282AD2D691006E442B /* DeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9262AD2D691006E442B /* DeviceMotion.swift */; };
+		BA27B9292AD2D691006E442B /* DeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9262AD2D691006E442B /* DeviceMotion.swift */; };
+		BA27B9332AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9322AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift */; };
+		BA27B9342AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9322AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift */; };
+		BA27B9362AD2DEDA006E442B /* BoardMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9352AD2DEDA006E442B /* BoardMotionManager.swift */; };
+		BA27B9372AD2DEDA006E442B /* BoardMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9352AD2DEDA006E442B /* BoardMotionManager.swift */; };
+		BA27B93C2AD2DFAB006E442B /* BodyMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B93B2AD2DFAB006E442B /* BodyMotionManager.swift */; };
+		BA27B9422AD373E9006E442B /* TurnYawingSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9412AD373E9006E442B /* TurnYawingSide.swift */; };
+		BA27B9432AD373E9006E442B /* TurnYawingSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9412AD373E9006E442B /* TurnYawingSide.swift */; };
+		BA27B9442AD373E9006E442B /* TurnYawingSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9412AD373E9006E442B /* TurnYawingSide.swift */; };
+		BA27B9462AD37455006E442B /* TurnSwitchingDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9452AD37455006E442B /* TurnSwitchingDirection.swift */; };
+		BA27B9472AD37455006E442B /* TurnSwitchingDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9452AD37455006E442B /* TurnSwitchingDirection.swift */; };
+		BA27B9482AD37455006E442B /* TurnSwitchingDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9452AD37455006E442B /* TurnSwitchingDirection.swift */; };
+		BA27B94C2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */; };
+		BA27B94D2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */; };
+		BA27B94E2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */; };
+		BA27B9512AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */; };
+		BA27B9522AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */; };
+		BA27B9532AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */; };
+		BA27B9552AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */; };
+		BA27B9562AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */; };
+		BA27B9572AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */; };
+		BA27B9592AD38E8D006E442B /* AbsoluteFallLineFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */; };
+		BA27B95A2AD38E8D006E442B /* AbsoluteFallLineFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */; };
+		BA27B95B2AD38E8D006E442B /* AbsoluteFallLineFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */; };
+		BA27B95D2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */; };
+		BA27B95E2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */; };
+		BA27B95F2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */; };
+		BA27B9612AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */; };
+		BA27B9622AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */; };
+		BA27B9632AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */; };
+		BA27B9652AD3A228006E442B /* CMRotationRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9642AD3A228006E442B /* CMRotationRate.swift */; };
+		BA27B9662AD3A228006E442B /* CMRotationRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9642AD3A228006E442B /* CMRotationRate.swift */; };
+		BA27B9672AD3A228006E442B /* CMRotationRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9642AD3A228006E442B /* CMRotationRate.swift */; };
+		BA27B9692AD3A563006E442B /* SkiTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */; };
+		BA27B96A2AD3A563006E442B /* SkiTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */; };
+		BA27B96B2AD3A563006E442B /* SkiTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */; };
+		BA27B96D2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B96C2AD3F804006E442B /* BodySideTurnPhase.swift */; };
+		BA27B96E2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B96C2AD3F804006E442B /* BodySideTurnPhase.swift */; };
+		BA27B96F2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B96C2AD3F804006E442B /* BodySideTurnPhase.swift */; };
+		BA27B9712AD66386006E442B /* KneeAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9702AD66386006E442B /* KneeAngle.swift */; };
+		BA27B9722AD66386006E442B /* KneeAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9702AD66386006E442B /* KneeAngle.swift */; };
+		BA27B9732AD66386006E442B /* KneeAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9702AD66386006E442B /* KneeAngle.swift */; };
+		BA27B9762AD7D70E006E442B /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9752AD7D70D006E442B /* DoubleExtension.swift */; };
+		BA27B9772AD7D70E006E442B /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9752AD7D70D006E442B /* DoubleExtension.swift */; };
+		BA27B9782AD7D70E006E442B /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9752AD7D70D006E442B /* DoubleExtension.swift */; };
+		BA67DC7C2AD9205B00214FFC /* UWBDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67DC7B2AD9205B00214FFC /* UWBDataRepository.swift */; };
+		BA67DC7D2AD9205B00214FFC /* UWBDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67DC7B2AD9205B00214FFC /* UWBDataRepository.swift */; };
+		BA67DC7F2ADD1AEB00214FFC /* InclineCoM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */; };
+		BA67DC802ADD1AEB00214FFC /* InclineCoM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */; };
+		BA67DC812ADD1AEB00214FFC /* InclineCoM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */; };
 		BABEBC7B2AD2122000A4E2F6 /* BoardRidingAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEBC7A2AD2122000A4E2F6 /* BoardRidingAnalyzerApp.swift */; };
 		BABEBC7D2AD2122100A4E2F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEBC7C2AD2122000A4E2F6 /* ContentView.swift */; };
 		BABEBC7F2AD2122300A4E2F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEBC7E2AD2122300A4E2F6 /* Assets.xcassets */; };
@@ -16,6 +110,11 @@
 		BABEBC8F2AD2122300A4E2F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEBC8E2AD2122300A4E2F6 /* ContentView.swift */; };
 		BABEBC912AD2122500A4E2F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEBC902AD2122500A4E2F6 /* Assets.xcassets */; };
 		BABEBC942AD2122500A4E2F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEBC932AD2122500A4E2F6 /* Preview Assets.xcassets */; };
+		BABEBCA52AD2125A00A4E2F6 /* BodySideAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEBCA42AD2125A00A4E2F6 /* BodySideAnalyzerApp.swift */; };
+		BABEBCA72AD2125A00A4E2F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEBCA62AD2125A00A4E2F6 /* ContentView.swift */; };
+		BABEBCA92AD2125C00A4E2F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEBCA82AD2125C00A4E2F6 /* Assets.xcassets */; };
+		BABEBCAC2AD2125C00A4E2F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEBCAB2AD2125C00A4E2F6 /* Preview Assets.xcassets */; };
+		BABEBE442AD2307000A4E2F6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEBE432AD2307000A4E2F6 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +142,41 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA27B8C02AD23436006E442B /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		BA27B8C32AD2345B006E442B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		BA27B8D02AD2389A006E442B /* MPCSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCSession.swift; sourceTree = "<group>"; };
+		BA27B8D32AD23F6C006E442B /* MPCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCManager.swift; sourceTree = "<group>"; };
+		BA27B8D72AD249D1006E442B /* MPCNIDelegateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCNIDelegateManager.swift; sourceTree = "<group>"; };
+		BA27B8DC2AD253CF006E442B /* UWBMeasuredData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBMeasuredData.swift; sourceTree = "<group>"; };
+		BA27B8E22AD25424006E442B /* NINearbyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NINearbyObject.swift; sourceTree = "<group>"; };
+		BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuaternionToEullerAngleDifferential.swift; sourceTree = "<group>"; };
+		BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsConstants.swift; sourceTree = "<group>"; };
+		BA27B8EB2AD25E4E006E442B /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
+		BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleShifter.swift; sourceTree = "<group>"; };
+		BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAcceleration.swift; sourceTree = "<group>"; };
+		BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerationForTargetAngle.swift; sourceTree = "<group>"; };
+		BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDeviceMotion.swift; sourceTree = "<group>"; };
+		BA27B8F22AD25E50006E442B /* CMQuaternion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMQuaternion.swift; sourceTree = "<group>"; };
+		BA27B8F32AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift; sourceTree = "<group>"; };
+		BA27B9262AD2D691006E442B /* DeviceMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotion.swift; sourceTree = "<group>"; };
+		BA27B9322AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSideBodyMotionReciever.swift; sourceTree = "<group>"; };
+		BA27B9352AD2DEDA006E442B /* BoardMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardMotionManager.swift; sourceTree = "<group>"; };
+		BA27B93B2AD2DFAB006E442B /* BodyMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMotionManager.swift; sourceTree = "<group>"; };
+		BA27B9412AD373E9006E442B /* TurnYawingSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnYawingSide.swift; sourceTree = "<group>"; };
+		BA27B9452AD37455006E442B /* TurnSwitchingDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSwitchingDirection.swift; sourceTree = "<group>"; };
+		BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSideChangingPeriodFinder.swift; sourceTree = "<group>"; };
+		BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSwitchingTimingFinder.swift; sourceTree = "<group>"; };
+		BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSwitchingDirectionFinder.swift; sourceTree = "<group>"; };
+		BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteFallLineFinder.swift; sourceTree = "<group>"; };
+		BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffrencialBeforeTurnSwitchedAngle.swift; sourceTree = "<group>"; };
+		BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiTurnPhaseAnalyzer.swift; sourceTree = "<group>"; };
+		BA27B9642AD3A228006E442B /* CMRotationRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMRotationRate.swift; sourceTree = "<group>"; };
+		BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiTurnPhase.swift; sourceTree = "<group>"; };
+		BA27B96C2AD3F804006E442B /* BodySideTurnPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySideTurnPhase.swift; sourceTree = "<group>"; };
+		BA27B9702AD66386006E442B /* KneeAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KneeAngle.swift; sourceTree = "<group>"; };
+		BA27B9752AD7D70D006E442B /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		BA67DC7B2AD9205B00214FFC /* UWBDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBDataRepository.swift; sourceTree = "<group>"; };
+		BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InclineCoM.swift; sourceTree = "<group>"; };
 		BABEBC772AD2122000A4E2F6 /* BoardRidingAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardRidingAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABEBC7A2AD2122000A4E2F6 /* BoardRidingAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardRidingAnalyzerApp.swift; sourceTree = "<group>"; };
 		BABEBC7C2AD2122000A4E2F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +187,16 @@
 		BABEBC8E2AD2122300A4E2F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BABEBC902AD2122500A4E2F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABEBC932AD2122500A4E2F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BABEBCA22AD2125A00A4E2F6 /* BodySideAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodySideAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABEBCA42AD2125A00A4E2F6 /* BodySideAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySideAnalyzerApp.swift; sourceTree = "<group>"; };
+		BABEBCA62AD2125A00A4E2F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BABEBCA82AD2125C00A4E2F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BABEBCAB2AD2125C00A4E2F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BABEBCB12AD212B300A4E2F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BABEBCB22AD212CA00A4E2F6 /* BoardRidingAnalyzer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoardRidingAnalyzer.entitlements; sourceTree = "<group>"; };
+		BABEBCB32AD2133B00A4E2F6 /* BodySideAnalyzer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BodySideAnalyzer.entitlements; sourceTree = "<group>"; };
+		BABEBCB42AD2134400A4E2F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BABEBE432AD2307000A4E2F6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +204,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA27B8C22AD23451006E442B /* MultipeerConnectivity.framework in Frameworks */,
+				BA27B8C42AD2345B006E442B /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,15 +216,125 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BABEBC9F2AD2125A00A4E2F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA27B8C12AD23436006E442B /* MultipeerConnectivity.framework in Frameworks */,
+				BABEBE442AD2307000A4E2F6 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA27B8CF2AD2387F006E442B /* NotWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B8D62AD2499D006E442B /* UWB */,
+				BA27B8D02AD2389A006E442B /* MPCSession.swift */,
+				BA27B8D32AD23F6C006E442B /* MPCManager.swift */,
+			);
+			path = NotWatch;
+			sourceTree = "<group>";
+		};
+		BA27B8D62AD2499D006E442B /* UWB */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B8D72AD249D1006E442B /* MPCNIDelegateManager.swift */,
+			);
+			path = UWB;
+			sourceTree = "<group>";
+		};
+		BA27B8DA2AD2538E006E442B /* DomainModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B93D2AD37167006E442B /* Service */,
+				BA27B8DB2AD253A9006E442B /* Entity */,
+			);
+			path = DomainModel;
+			sourceTree = "<group>";
+		};
+		BA27B8DB2AD253A9006E442B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B8DC2AD253CF006E442B /* UWBMeasuredData.swift */,
+				BA27B9262AD2D691006E442B /* DeviceMotion.swift */,
+				BA27B9412AD373E9006E442B /* TurnYawingSide.swift */,
+				BA27B9452AD37455006E442B /* TurnSwitchingDirection.swift */,
+				BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */,
+				BA27B96C2AD3F804006E442B /* BodySideTurnPhase.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		BA27B8E02AD253F4006E442B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B8E12AD25403006E442B /* General */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BA27B8E12AD25403006E442B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */,
+				BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */,
+				BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */,
+				BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */,
+				BA27B8F22AD25E50006E442B /* CMQuaternion.swift */,
+				BA27B8F32AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift */,
+				BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */,
+				BA27B8EB2AD25E4E006E442B /* Point3D.swift */,
+				BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */,
+				BA27B8E22AD25424006E442B /* NINearbyObject.swift */,
+				BA27B9752AD7D70D006E442B /* DoubleExtension.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		BA27B93D2AD37167006E442B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B9492AD389F2006E442B /* TurnAnalyzer */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA27B9492AD389F2006E442B /* TurnAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B94A2AD389FF006E442B /* Module */,
+				BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */,
+			);
+			path = TurnAnalyzer;
+			sourceTree = "<group>";
+		};
+		BA27B94A2AD389FF006E442B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */,
+				BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */,
+				BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */,
+				BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */,
+				BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */,
+				BA27B9642AD3A228006E442B /* CMRotationRate.swift */,
+				BA27B9702AD66386006E442B /* KneeAngle.swift */,
+				BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		BABEBC6E2AD2122000A4E2F6 = {
 			isa = PBXGroup;
 			children = (
+				BABEBCB02AD2126900A4E2F6 /* CommonUtility */,
 				BABEBC792AD2122000A4E2F6 /* BoardRidingAnalyzer */,
 				BABEBC8B2AD2122300A4E2F6 /* BoardRidingAnalyzer Watch App */,
+				BABEBCA32AD2125A00A4E2F6 /* BodySideAnalyzer */,
 				BABEBC782AD2122000A4E2F6 /* Products */,
+				BABEBE422AD2307000A4E2F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +343,7 @@
 			children = (
 				BABEBC772AD2122000A4E2F6 /* BoardRidingAnalyzer.app */,
 				BABEBC872AD2122300A4E2F6 /* BoardRidingAnalyzer Watch App.app */,
+				BABEBCA22AD2125A00A4E2F6 /* BodySideAnalyzer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,10 +351,15 @@
 		BABEBC792AD2122000A4E2F6 /* BoardRidingAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				BABEBCB22AD212CA00A4E2F6 /* BoardRidingAnalyzer.entitlements */,
+				BABEBCB12AD212B300A4E2F6 /* Info.plist */,
 				BABEBC7A2AD2122000A4E2F6 /* BoardRidingAnalyzerApp.swift */,
 				BABEBC7C2AD2122000A4E2F6 /* ContentView.swift */,
 				BABEBC7E2AD2122300A4E2F6 /* Assets.xcassets */,
 				BABEBC802AD2122300A4E2F6 /* Preview Content */,
+				BA27B9322AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift */,
+				BA27B9352AD2DEDA006E442B /* BoardMotionManager.swift */,
+				BA67DC7B2AD9205B00214FFC /* UWBDataRepository.swift */,
 			);
 			path = BoardRidingAnalyzer;
 			sourceTree = "<group>";
@@ -129,6 +391,56 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BABEBCA32AD2125A00A4E2F6 /* BodySideAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				BABEBCB42AD2134400A4E2F6 /* Info.plist */,
+				BABEBCB32AD2133B00A4E2F6 /* BodySideAnalyzer.entitlements */,
+				BABEBCA42AD2125A00A4E2F6 /* BodySideAnalyzerApp.swift */,
+				BABEBCA62AD2125A00A4E2F6 /* ContentView.swift */,
+				BABEBCA82AD2125C00A4E2F6 /* Assets.xcassets */,
+				BABEBCAA2AD2125C00A4E2F6 /* Preview Content */,
+				BA27B93B2AD2DFAB006E442B /* BodyMotionManager.swift */,
+			);
+			path = BodySideAnalyzer;
+			sourceTree = "<group>";
+		};
+		BABEBCAA2AD2125C00A4E2F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BABEBCAB2AD2125C00A4E2F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BABEBCB02AD2126900A4E2F6 /* CommonUtility */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B8E02AD253F4006E442B /* Library */,
+				BA27B8DA2AD2538E006E442B /* DomainModel */,
+				BABEBCB52AD2150800A4E2F6 /* Network */,
+			);
+			path = CommonUtility;
+			sourceTree = "<group>";
+		};
+		BABEBCB52AD2150800A4E2F6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B8CF2AD2387F006E442B /* NotWatch */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BABEBE422AD2307000A4E2F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B8C32AD2345B006E442B /* CoreMotion.framework */,
+				BA27B8C02AD23436006E442B /* MultipeerConnectivity.framework */,
+				BABEBE432AD2307000A4E2F6 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +459,8 @@
 				BABEBC8A2AD2122300A4E2F6 /* PBXTargetDependency */,
 			);
 			name = BoardRidingAnalyzer;
+			packageProductDependencies = (
+			);
 			productName = BoardRidingAnalyzer;
 			productReference = BABEBC772AD2122000A4E2F6 /* BoardRidingAnalyzer.app */;
 			productType = "com.apple.product-type.application";
@@ -164,8 +478,29 @@
 			dependencies = (
 			);
 			name = "BoardRidingAnalyzer Watch App";
+			packageProductDependencies = (
+			);
 			productName = "BoardRidingAnalyzer Watch App";
 			productReference = BABEBC872AD2122300A4E2F6 /* BoardRidingAnalyzer Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BABEBCA12AD2125A00A4E2F6 /* BodySideAnalyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BABEBCAD2AD2125C00A4E2F6 /* Build configuration list for PBXNativeTarget "BodySideAnalyzer" */;
+			buildPhases = (
+				BABEBC9E2AD2125A00A4E2F6 /* Sources */,
+				BABEBC9F2AD2125A00A4E2F6 /* Frameworks */,
+				BABEBCA02AD2125A00A4E2F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BodySideAnalyzer;
+			packageProductDependencies = (
+			);
+			productName = BodySideAnalyzer;
+			productReference = BABEBCA22AD2125A00A4E2F6 /* BodySideAnalyzer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -184,6 +519,9 @@
 					BABEBC862AD2122300A4E2F6 = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					BABEBCA12AD2125A00A4E2F6 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 				};
 			};
 			buildConfigurationList = BABEBC722AD2122000A4E2F6 /* Build configuration list for PBXProject "BoardRidingAnalyzer" */;
@@ -195,12 +533,15 @@
 				Base,
 			);
 			mainGroup = BABEBC6E2AD2122000A4E2F6;
+			packageReferences = (
+			);
 			productRefGroup = BABEBC782AD2122000A4E2F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BABEBC762AD2122000A4E2F6 /* BoardRidingAnalyzer */,
 				BABEBC862AD2122300A4E2F6 /* BoardRidingAnalyzer Watch App */,
+				BABEBCA12AD2125A00A4E2F6 /* BodySideAnalyzer */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +565,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BABEBCA02AD2125A00A4E2F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABEBCAC2AD2125C00A4E2F6 /* Preview Assets.xcassets in Resources */,
+				BABEBCA92AD2125C00A4E2F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -231,8 +581,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA27B9462AD37455006E442B /* TurnSwitchingDirection.swift in Sources */,
+				BA27B9062AD25E50006E442B /* AngleShifter.swift in Sources */,
+				BA27B9182AD25E50006E442B /* CMQuaternion.swift in Sources */,
+				BA27B9612AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */,
 				BABEBC7D2AD2122100A4E2F6 /* ContentView.swift in Sources */,
+				BA27B8FA2AD25E50006E442B /* PhysicsConstants.swift in Sources */,
+				BA67DC7C2AD9205B00214FFC /* UWBDataRepository.swift in Sources */,
 				BABEBC7B2AD2122000A4E2F6 /* BoardRidingAnalyzerApp.swift in Sources */,
+				BA27B9712AD66386006E442B /* KneeAngle.swift in Sources */,
+				BA27B9592AD38E8D006E442B /* AbsoluteFallLineFinder.swift in Sources */,
+				BA27B9152AD25E50006E442B /* CMDeviceMotion.swift in Sources */,
+				BA27B9272AD2D691006E442B /* DeviceMotion.swift in Sources */,
+				BA27B94C2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
+				BA27B8F42AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */,
+				BA27B9652AD3A228006E442B /* CMRotationRate.swift in Sources */,
+				BA27B90F2AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */,
+				BA27B8E32AD25424006E442B /* NINearbyObject.swift in Sources */,
+				BA27B91B2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */,
+				BA27B9762AD7D70E006E442B /* DoubleExtension.swift in Sources */,
+				BA27B90C2AD25E50006E442B /* CMAcceleration.swift in Sources */,
+				BA67DC7F2ADD1AEB00214FFC /* InclineCoM.swift in Sources */,
+				BA27B9692AD3A563006E442B /* SkiTurnPhase.swift in Sources */,
+				BA27B9332AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift in Sources */,
+				BA27B8DD2AD253CF006E442B /* UWBMeasuredData.swift in Sources */,
+				BA27B9512AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */,
+				BA27B9032AD25E50006E442B /* Point3D.swift in Sources */,
+				BA27B9552AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */,
+				BA27B9362AD2DEDA006E442B /* BoardMotionManager.swift in Sources */,
+				BA27B8D42AD23F6C006E442B /* MPCManager.swift in Sources */,
+				BA27B8D12AD2389A006E442B /* MPCSession.swift in Sources */,
+				BA27B95D2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */,
+				BA27B8D82AD249D1006E442B /* MPCNIDelegateManager.swift in Sources */,
+				BA27B9422AD373E9006E442B /* TurnYawingSide.swift in Sources */,
+				BA27B96D2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +622,76 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA67DC802ADD1AEB00214FFC /* InclineCoM.swift in Sources */,
+				BA27B9472AD37455006E442B /* TurnSwitchingDirection.swift in Sources */,
+				BA27B9102AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */,
+				BA27B96E2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */,
+				BA27B96A2AD3A563006E442B /* SkiTurnPhase.swift in Sources */,
 				BABEBC8F2AD2122300A4E2F6 /* ContentView.swift in Sources */,
+				BA27B9282AD2D691006E442B /* DeviceMotion.swift in Sources */,
+				BA27B9072AD25E50006E442B /* AngleShifter.swift in Sources */,
 				BABEBC8D2AD2122300A4E2F6 /* BoardRidingAnalyzerApp.swift in Sources */,
+				BA27B9562AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */,
+				BA27B9162AD25E50006E442B /* CMDeviceMotion.swift in Sources */,
+				BA27B8FB2AD25E50006E442B /* PhysicsConstants.swift in Sources */,
+				BA27B9772AD7D70E006E442B /* DoubleExtension.swift in Sources */,
+				BA27B95A2AD38E8D006E442B /* AbsoluteFallLineFinder.swift in Sources */,
+				BA27B8E42AD25424006E442B /* NINearbyObject.swift in Sources */,
+				BA27B9192AD25E50006E442B /* CMQuaternion.swift in Sources */,
+				BA27B9042AD25E50006E442B /* Point3D.swift in Sources */,
+				BA27B91C2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */,
+				BA27B9622AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */,
+				BA27B9522AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */,
+				BA27B9432AD373E9006E442B /* TurnYawingSide.swift in Sources */,
+				BA27B9722AD66386006E442B /* KneeAngle.swift in Sources */,
+				BA27B90D2AD25E50006E442B /* CMAcceleration.swift in Sources */,
+				BA27B9662AD3A228006E442B /* CMRotationRate.swift in Sources */,
+				BA27B94D2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
+				BA27B8DE2AD253CF006E442B /* UWBMeasuredData.swift in Sources */,
+				BA27B95E2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */,
+				BA27B8F52AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABEBC9E2AD2125A00A4E2F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA27B9082AD25E50006E442B /* AngleShifter.swift in Sources */,
+				BA27B91A2AD25E50006E442B /* CMQuaternion.swift in Sources */,
+				BA27B9732AD66386006E442B /* KneeAngle.swift in Sources */,
+				BABEBCA72AD2125A00A4E2F6 /* ContentView.swift in Sources */,
+				BA27B9572AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */,
+				BA27B9782AD7D70E006E442B /* DoubleExtension.swift in Sources */,
+				BA27B8FC2AD25E50006E442B /* PhysicsConstants.swift in Sources */,
+				BABEBCA52AD2125A00A4E2F6 /* BodySideAnalyzerApp.swift in Sources */,
+				BA27B9172AD25E50006E442B /* CMDeviceMotion.swift in Sources */,
+				BA27B9292AD2D691006E442B /* DeviceMotion.swift in Sources */,
+				BA67DC7D2AD9205B00214FFC /* UWBDataRepository.swift in Sources */,
+				BA27B9632AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */,
+				BA67DC812ADD1AEB00214FFC /* InclineCoM.swift in Sources */,
+				BA27B8F62AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */,
+				BA27B9112AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */,
+				BA27B9482AD37455006E442B /* TurnSwitchingDirection.swift in Sources */,
+				BA27B8E52AD25424006E442B /* NINearbyObject.swift in Sources */,
+				BA27B94E2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
+				BA27B96B2AD3A563006E442B /* SkiTurnPhase.swift in Sources */,
+				BA27B91D2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */,
+				BA27B90E2AD25E50006E442B /* CMAcceleration.swift in Sources */,
+				BA27B9342AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift in Sources */,
+				BA27B93C2AD2DFAB006E442B /* BodyMotionManager.swift in Sources */,
+				BA27B95B2AD38E8D006E442B /* AbsoluteFallLineFinder.swift in Sources */,
+				BA27B8DF2AD253CF006E442B /* UWBMeasuredData.swift in Sources */,
+				BA27B96F2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */,
+				BA27B9672AD3A228006E442B /* CMRotationRate.swift in Sources */,
+				BA27B9442AD373E9006E442B /* TurnYawingSide.swift in Sources */,
+				BA27B9052AD25E50006E442B /* Point3D.swift in Sources */,
+				BA27B9532AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */,
+				BA27B95F2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */,
+				BA27B9372AD2DEDA006E442B /* BoardMotionManager.swift in Sources */,
+				BA27B8D52AD23F6C006E442B /* MPCManager.swift in Sources */,
+				BA27B8D22AD2389A006E442B /* MPCSession.swift in Sources */,
+				BA27B8D92AD249D1006E442B /* MPCNIDelegateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +887,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BoardRidingAnalyzer/BoardRidingAnalyzer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BoardRidingAnalyzer/Preview Content\"";
 				DEVELOPMENT_TEAM = X4RPB4Q33M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BoardRidingAnalyzer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BoardRidingAnalyzer;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,12 +922,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BoardRidingAnalyzer/BoardRidingAnalyzer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BoardRidingAnalyzer/Preview Content\"";
 				DEVELOPMENT_TEAM = X4RPB4Q33M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BoardRidingAnalyzer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BoardRidingAnalyzer;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,6 +943,73 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = koyakei.BoardRidingAnalyzer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BABEBCAE2AD2125C00A4E2F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BodySideAnalyzer/BodySideAnalyzer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BodySideAnalyzer/Preview Content\"";
+				DEVELOPMENT_TEAM = X4RPB4Q33M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BodySideAnalyzer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = koyakei.BodySideAnalyzer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BABEBCAF2AD2125C00A4E2F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BodySideAnalyzer/BodySideAnalyzer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BodySideAnalyzer/Preview Content\"";
+				DEVELOPMENT_TEAM = X4RPB4Q33M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BodySideAnalyzer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = koyakei.BodySideAnalyzer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -524,6 +1045,15 @@
 			buildConfigurations = (
 				BABEBC9C2AD2122500A4E2F6 /* Debug */,
 				BABEBC9D2AD2122500A4E2F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BABEBCAD2AD2125C00A4E2F6 /* Build configuration list for PBXNativeTarget "BodySideAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABEBCAE2AD2125C00A4E2F6 /* Debug */,
+				BABEBCAF2AD2125C00A4E2F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
