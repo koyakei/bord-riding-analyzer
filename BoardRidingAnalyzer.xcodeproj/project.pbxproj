@@ -31,9 +31,6 @@
 		BA27B9032AD25E50006E442B /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EB2AD25E4E006E442B /* Point3D.swift */; };
 		BA27B9042AD25E50006E442B /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EB2AD25E4E006E442B /* Point3D.swift */; };
 		BA27B9052AD25E50006E442B /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EB2AD25E4E006E442B /* Point3D.swift */; };
-		BA27B9062AD25E50006E442B /* AngleShifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */; };
-		BA27B9072AD25E50006E442B /* AngleShifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */; };
-		BA27B9082AD25E50006E442B /* AngleShifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */; };
 		BA27B90C2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
 		BA27B90D2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
 		BA27B90E2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
@@ -81,9 +78,6 @@
 		BA27B9612AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */; };
 		BA27B9622AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */; };
 		BA27B9632AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */; };
-		BA27B9652AD3A228006E442B /* CMRotationRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9642AD3A228006E442B /* CMRotationRate.swift */; };
-		BA27B9662AD3A228006E442B /* CMRotationRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9642AD3A228006E442B /* CMRotationRate.swift */; };
-		BA27B9672AD3A228006E442B /* CMRotationRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9642AD3A228006E442B /* CMRotationRate.swift */; };
 		BA27B9692AD3A563006E442B /* SkiTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */; };
 		BA27B96A2AD3A563006E442B /* SkiTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */; };
 		BA27B96B2AD3A563006E442B /* SkiTurnPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */; };
@@ -152,7 +146,6 @@
 		BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuaternionToEullerAngleDifferential.swift; sourceTree = "<group>"; };
 		BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsConstants.swift; sourceTree = "<group>"; };
 		BA27B8EB2AD25E4E006E442B /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
-		BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleShifter.swift; sourceTree = "<group>"; };
 		BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAcceleration.swift; sourceTree = "<group>"; };
 		BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerationForTargetAngle.swift; sourceTree = "<group>"; };
 		BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDeviceMotion.swift; sourceTree = "<group>"; };
@@ -170,7 +163,6 @@
 		BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteFallLineFinder.swift; sourceTree = "<group>"; };
 		BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffrencialBeforeTurnSwitchedAngle.swift; sourceTree = "<group>"; };
 		BA27B9602AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiTurnPhaseAnalyzer.swift; sourceTree = "<group>"; };
-		BA27B9642AD3A228006E442B /* CMRotationRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMRotationRate.swift; sourceTree = "<group>"; };
 		BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiTurnPhase.swift; sourceTree = "<group>"; };
 		BA27B96C2AD3F804006E442B /* BodySideTurnPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySideTurnPhase.swift; sourceTree = "<group>"; };
 		BA27B9702AD66386006E442B /* KneeAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KneeAngle.swift; sourceTree = "<group>"; };
@@ -280,7 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */,
-				BA27B8EC2AD25E4F006E442B /* AngleShifter.swift */,
 				BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */,
 				BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */,
 				BA27B8F22AD25E50006E442B /* CMQuaternion.swift */,
@@ -319,7 +310,6 @@
 				BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */,
 				BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */,
 				BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */,
-				BA27B9642AD3A228006E442B /* CMRotationRate.swift */,
 				BA27B9702AD66386006E442B /* KneeAngle.swift */,
 				BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */,
 			);
@@ -582,7 +572,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA27B9462AD37455006E442B /* TurnSwitchingDirection.swift in Sources */,
-				BA27B9062AD25E50006E442B /* AngleShifter.swift in Sources */,
 				BA27B9182AD25E50006E442B /* CMQuaternion.swift in Sources */,
 				BA27B9612AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */,
 				BABEBC7D2AD2122100A4E2F6 /* ContentView.swift in Sources */,
@@ -595,7 +584,6 @@
 				BA27B9272AD2D691006E442B /* DeviceMotion.swift in Sources */,
 				BA27B94C2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
 				BA27B8F42AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */,
-				BA27B9652AD3A228006E442B /* CMRotationRate.swift in Sources */,
 				BA27B90F2AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */,
 				BA27B8E32AD25424006E442B /* NINearbyObject.swift in Sources */,
 				BA27B91B2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */,
@@ -629,7 +617,6 @@
 				BA27B96A2AD3A563006E442B /* SkiTurnPhase.swift in Sources */,
 				BABEBC8F2AD2122300A4E2F6 /* ContentView.swift in Sources */,
 				BA27B9282AD2D691006E442B /* DeviceMotion.swift in Sources */,
-				BA27B9072AD25E50006E442B /* AngleShifter.swift in Sources */,
 				BABEBC8D2AD2122300A4E2F6 /* BoardRidingAnalyzerApp.swift in Sources */,
 				BA27B9562AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */,
 				BA27B9162AD25E50006E442B /* CMDeviceMotion.swift in Sources */,
@@ -645,7 +632,6 @@
 				BA27B9432AD373E9006E442B /* TurnYawingSide.swift in Sources */,
 				BA27B9722AD66386006E442B /* KneeAngle.swift in Sources */,
 				BA27B90D2AD25E50006E442B /* CMAcceleration.swift in Sources */,
-				BA27B9662AD3A228006E442B /* CMRotationRate.swift in Sources */,
 				BA27B94D2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
 				BA27B8DE2AD253CF006E442B /* UWBMeasuredData.swift in Sources */,
 				BA27B95E2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */,
@@ -657,7 +643,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA27B9082AD25E50006E442B /* AngleShifter.swift in Sources */,
 				BA27B91A2AD25E50006E442B /* CMQuaternion.swift in Sources */,
 				BA27B9732AD66386006E442B /* KneeAngle.swift in Sources */,
 				BABEBCA72AD2125A00A4E2F6 /* ContentView.swift in Sources */,
@@ -683,7 +668,6 @@
 				BA27B95B2AD38E8D006E442B /* AbsoluteFallLineFinder.swift in Sources */,
 				BA27B8DF2AD253CF006E442B /* UWBMeasuredData.swift in Sources */,
 				BA27B96F2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */,
-				BA27B9672AD3A228006E442B /* CMRotationRate.swift in Sources */,
 				BA27B9442AD373E9006E442B /* TurnYawingSide.swift in Sources */,
 				BA27B9052AD25E50006E442B /* Point3D.swift in Sources */,
 				BA27B9532AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */,

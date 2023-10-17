@@ -9,21 +9,30 @@ import Foundation
 import CoreMotion
 import MultipeerConnectivity
 
-class BoardMotionManager  {
+class BoardMotionManager :ObservableObject {
     let coremotionManager = CMMotionManager()
     var skiTurnAnalyzer = SkiTurnPhaseAnalyzer()
     var inclineCom: InclineCoM
     init (inclineCoM: inout InclineCoM){
         self.inclineCom = inclineCoM
     }
+    var inclineCoMs : [InclineCoM] = []
+    @Published var beforeいちターンでの内倒合計: Double = 0
+    @Published var いちターンでの谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか: Double = 0
+    
+    func turnSwitched(){
+        self.beforeいちターンでの内倒合計 = inclineCoMs.いちターンでの内倒合計()
+        self.いちターンでの谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか = inclineCoMs.いちターンでの谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか()
+        inclineCoMs.removeAll()
+    }
     func start(){
         coremotionManager.startDeviceMotionUpdates(using: .xTrueNorthZVertical,to: .current!) { motion, error in
             if let motion = motion{
                 let res = self.skiTurnAnalyzer.handle(deviceMotion: motion.deviceMotion)
-                self.inclineCom.skiDirectionAbsoluteByNorth = motion.deviceMotion.attitude
-                self.inclineCom.fallLineDirectionZVerticalXTrueNorth = res.fallLine
-                self.inclineCom.turnYawingSide = motion.deviceMotion.rotationRate.yawingSide
+                self.inclineCom.receiveDeviceMotion(motion: motion.deviceMotion, skiTurnPhase: res)
+                self.inclineCoMs.append(self.inclineCom)
             }
+            
         }
     }
 }

@@ -12,6 +12,7 @@ struct ContentView: View {
     @StateObject var mPCNIDelegateManager : MPCNIDelegateManager
     @StateObject var boardSideBodyMotionReciever : BoardSideBodyMotionReciever
     @StateObject var inclineCoM : InclineCoM
+    @StateObject var boardMotionManager: BoardMotionManager
     
     let kneeAngle: KneeAngle = KneeAngle()
     var body: some View {
@@ -28,7 +29,13 @@ struct ContentView: View {
             }
             HStack{
                 Text("谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか")
-                Text(inclineCoM.谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか.f2)
+                Text(boardMotionManager.いちターンでの谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか.f2)
+            }
+            
+            HStack{
+                Text("１ターンの合計内倒度合い")
+                Text(boardMotionManager.beforeいちターンでの内倒合計.f2)
+                
             }
             
             Text(mPCNIDelegateManager.uwbMeasuredData?.realDistance.realPoint3DByCentimeter.description ?? "nasi").font(.title)

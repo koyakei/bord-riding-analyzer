@@ -28,11 +28,19 @@ struct BoardRidingAnalyzerApp: App {
         mpcManager.mpc.peerDataReciever.append(
             recieveUWB
         )
-        mPCNIDelegateManager.uwbMeasuredHandler.append(inclineCoM.receiveUWBMeasuredData)
+        mPCNIDelegateManager.uwbMeasuredHandler.append(receiveUWBMeasuredData)
         boardMotionManager.skiTurnAnalyzer.turnSwitchedHandler.append(
             boardSideBodyMotionReciever.turnSwitched
         )
+        boardMotionManager.skiTurnAnalyzer.turnSwitchedHandler.append(
+            boardMotionManager.turnSwitched
+        )
     }
+    
+    func receiveUWBMeasuredData(data: UWBMeasuredData,_: MPCSession){
+        inclineCoM.receiveUWBMeasuredData(data: data)
+    }
+    
     
     func recieveUWB(
         data: Data,
@@ -53,7 +61,8 @@ struct BoardRidingAnalyzerApp: App {
             ContentView(
                 mpcManager: mpcManager,
                 mPCNIDelegateManager: mPCNIDelegateManager,
-                boardSideBodyMotionReciever: boardSideBodyMotionReciever, inclineCoM: inclineCoM
+                boardSideBodyMotionReciever: boardSideBodyMotionReciever, inclineCoM: inclineCoM,
+                boardMotionManager: boardMotionManager
             )
         }
     }

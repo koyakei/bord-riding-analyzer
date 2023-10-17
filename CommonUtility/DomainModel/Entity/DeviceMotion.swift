@@ -27,10 +27,10 @@ protocol DeviceMotionProtocol : TimeStamp {
 extension Vector3D {
     var yawingSide: TurnYawingSide {
         get{
-            switch z {
-            case -.infinity..<PhysicsConstants.degree * -1:
+            switch Angle2D(radians: z).degrees {
+            case -.infinity..<(-1):
                 return TurnYawingSide.RightYawing
-            case PhysicsConstants.degree...Double.infinity:
+            case 1...Double.infinity:
                 return TurnYawingSide.LeftYawing
             default:
                 return TurnYawingSide.Straight
