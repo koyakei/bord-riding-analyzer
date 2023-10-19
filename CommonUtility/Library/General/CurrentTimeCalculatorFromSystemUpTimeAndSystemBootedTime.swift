@@ -8,11 +8,13 @@
 import Foundation
 
 
-struct MilliSecondString {
-    static func handle(timeStamp: TimeInterval)-> String {
-        let format = DateFormatter()
-        format.dateFormat = "HH:mm:ss.SSS"
-        return format.string(from: Date(timeIntervalSince1970:
-                                 timeStamp))
+extension TimeInterval {
+    var milliSecondString : String {
+        get{
+            let format = DateFormatter()
+            format.dateFormat = "HH:mm:ss.SSS"
+            return format.string(from: Date(timeIntervalSince1970:
+                                                self))
+        }
     }
 }

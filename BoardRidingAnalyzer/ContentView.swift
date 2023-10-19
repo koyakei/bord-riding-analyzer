@@ -33,6 +33,9 @@ struct ContentView: View {
             }
             
             HStack{
+                Toggle(isOn: self.$boardMotionManager.内倒音声読み上げ) {
+                            Text(boardMotionManager.内倒音声読み上げ ? "OFF" : "ON")
+                        }
                 Text("１ターンの合計内倒度合い")
                 Text(boardMotionManager.beforeいちターンでの内倒合計.f2)
                 
@@ -65,4 +68,4 @@ struct ContentView: View {
     }
 }
 
-
+// ここで読み上げもやるか。 interface 側にしよう

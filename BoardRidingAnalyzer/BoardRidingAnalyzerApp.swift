@@ -41,7 +41,6 @@ struct BoardRidingAnalyzerApp: App {
         inclineCoM.receiveUWBMeasuredData(data: data)
     }
     
-    
     func recieveUWB(
         data: Data,
         peer: MCPeerID

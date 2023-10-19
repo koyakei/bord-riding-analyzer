@@ -22,9 +22,6 @@
 		BA27B8E32AD25424006E442B /* NINearbyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E22AD25424006E442B /* NINearbyObject.swift */; };
 		BA27B8E42AD25424006E442B /* NINearbyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E22AD25424006E442B /* NINearbyObject.swift */; };
 		BA27B8E52AD25424006E442B /* NINearbyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E22AD25424006E442B /* NINearbyObject.swift */; };
-		BA27B8F42AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */; };
-		BA27B8F52AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */; };
-		BA27B8F62AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */; };
 		BA27B8FA2AD25E50006E442B /* PhysicsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */; };
 		BA27B8FB2AD25E50006E442B /* PhysicsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */; };
 		BA27B8FC2AD25E50006E442B /* PhysicsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */; };
@@ -34,9 +31,6 @@
 		BA27B90C2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
 		BA27B90D2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
 		BA27B90E2AD25E50006E442B /* CMAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */; };
-		BA27B90F2AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */; };
-		BA27B9102AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */; };
-		BA27B9112AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */; };
 		BA27B9152AD25E50006E442B /* CMDeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */; };
 		BA27B9162AD25E50006E442B /* CMDeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */; };
 		BA27B9172AD25E50006E442B /* CMDeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */; };
@@ -109,6 +103,8 @@
 		BABEBCA92AD2125C00A4E2F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEBCA82AD2125C00A4E2F6 /* Assets.xcassets */; };
 		BABEBCAC2AD2125C00A4E2F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEBCAB2AD2125C00A4E2F6 /* Preview Assets.xcassets */; };
 		BABEBE442AD2307000A4E2F6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEBE432AD2307000A4E2F6 /* HealthKit.framework */; };
+		BAE5745A2ADE94430003A8D0 /* Speecher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE574592ADE94430003A8D0 /* Speecher.swift */; };
+		BAE5745B2ADE94430003A8D0 /* Speecher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE574592ADE94430003A8D0 /* Speecher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,11 +139,9 @@
 		BA27B8D72AD249D1006E442B /* MPCNIDelegateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCNIDelegateManager.swift; sourceTree = "<group>"; };
 		BA27B8DC2AD253CF006E442B /* UWBMeasuredData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBMeasuredData.swift; sourceTree = "<group>"; };
 		BA27B8E22AD25424006E442B /* NINearbyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NINearbyObject.swift; sourceTree = "<group>"; };
-		BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuaternionToEullerAngleDifferential.swift; sourceTree = "<group>"; };
 		BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsConstants.swift; sourceTree = "<group>"; };
 		BA27B8EB2AD25E4E006E442B /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
 		BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAcceleration.swift; sourceTree = "<group>"; };
-		BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerationForTargetAngle.swift; sourceTree = "<group>"; };
 		BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDeviceMotion.swift; sourceTree = "<group>"; };
 		BA27B8F22AD25E50006E442B /* CMQuaternion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMQuaternion.swift; sourceTree = "<group>"; };
 		BA27B8F32AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift; sourceTree = "<group>"; };
@@ -189,6 +183,7 @@
 		BABEBCB32AD2133B00A4E2F6 /* BodySideAnalyzer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BodySideAnalyzer.entitlements; sourceTree = "<group>"; };
 		BABEBCB42AD2134400A4E2F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BABEBE432AD2307000A4E2F6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		BAE574592ADE94430003A8D0 /* Speecher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speecher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,16 +266,15 @@
 		BA27B8E12AD25403006E442B /* General */ = {
 			isa = PBXGroup;
 			children = (
-				BA27B8EF2AD25E4F006E442B /* AccelerationForTargetAngle.swift */,
 				BA27B8EE2AD25E4F006E442B /* CMAcceleration.swift */,
 				BA27B8F12AD25E50006E442B /* CMDeviceMotion.swift */,
 				BA27B8F22AD25E50006E442B /* CMQuaternion.swift */,
 				BA27B8F32AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift */,
 				BA27B8E82AD25E4E006E442B /* PhysicsConstants.swift */,
 				BA27B8EB2AD25E4E006E442B /* Point3D.swift */,
-				BA27B8E62AD25E4D006E442B /* QuaternionToEullerAngleDifferential.swift */,
 				BA27B8E22AD25424006E442B /* NINearbyObject.swift */,
 				BA27B9752AD7D70D006E442B /* DoubleExtension.swift */,
+				BAE574592ADE94430003A8D0 /* Speecher.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -583,8 +577,7 @@
 				BA27B9152AD25E50006E442B /* CMDeviceMotion.swift in Sources */,
 				BA27B9272AD2D691006E442B /* DeviceMotion.swift in Sources */,
 				BA27B94C2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
-				BA27B8F42AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */,
-				BA27B90F2AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */,
+				BAE5745A2ADE94430003A8D0 /* Speecher.swift in Sources */,
 				BA27B8E32AD25424006E442B /* NINearbyObject.swift in Sources */,
 				BA27B91B2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */,
 				BA27B9762AD7D70E006E442B /* DoubleExtension.swift in Sources */,
@@ -612,7 +605,6 @@
 			files = (
 				BA67DC802ADD1AEB00214FFC /* InclineCoM.swift in Sources */,
 				BA27B9472AD37455006E442B /* TurnSwitchingDirection.swift in Sources */,
-				BA27B9102AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */,
 				BA27B96E2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */,
 				BA27B96A2AD3A563006E442B /* SkiTurnPhase.swift in Sources */,
 				BABEBC8F2AD2122300A4E2F6 /* ContentView.swift in Sources */,
@@ -635,7 +627,6 @@
 				BA27B94D2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
 				BA27B8DE2AD253CF006E442B /* UWBMeasuredData.swift in Sources */,
 				BA27B95E2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */,
-				BA27B8F52AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,10 +644,9 @@
 				BA27B9172AD25E50006E442B /* CMDeviceMotion.swift in Sources */,
 				BA27B9292AD2D691006E442B /* DeviceMotion.swift in Sources */,
 				BA67DC7D2AD9205B00214FFC /* UWBDataRepository.swift in Sources */,
+				BAE5745B2ADE94430003A8D0 /* Speecher.swift in Sources */,
 				BA27B9632AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */,
 				BA67DC812ADD1AEB00214FFC /* InclineCoM.swift in Sources */,
-				BA27B8F62AD25E50006E442B /* QuaternionToEullerAngleDifferential.swift in Sources */,
-				BA27B9112AD25E50006E442B /* AccelerationForTargetAngle.swift in Sources */,
 				BA27B9482AD37455006E442B /* TurnSwitchingDirection.swift in Sources */,
 				BA27B8E52AD25424006E442B /* NINearbyObject.swift in Sources */,
 				BA27B94E2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
