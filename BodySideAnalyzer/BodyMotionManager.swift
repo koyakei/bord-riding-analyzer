@@ -21,6 +21,9 @@ class BodyMotionManager :NSObject,ObservableObject {
         coremotionManager.startDeviceMotionUpdates(using: .xTrueNorthZVertical,to: .current!) { motion, error in
             if let motion = motion{
                 self.bodySideTurnPhase.recieveMotion(deviceMotion: motion.deviceMotion)
+                if let data = try? JSONEncoder().encode(self.bodySideTurnPhase){
+                    self.mpcManager.mpc.sendDataToAllPeers(data: data)
+                }
             }
         }
     }

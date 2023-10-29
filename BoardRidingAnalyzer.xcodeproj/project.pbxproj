@@ -57,9 +57,6 @@
 		BA27B94C2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */; };
 		BA27B94D2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */; };
 		BA27B94E2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */; };
-		BA27B9512AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */; };
-		BA27B9522AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */; };
-		BA27B9532AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */; };
 		BA27B9552AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */; };
 		BA27B9562AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */; };
 		BA27B9572AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */; };
@@ -105,6 +102,9 @@
 		BABEBE442AD2307000A4E2F6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABEBE432AD2307000A4E2F6 /* HealthKit.framework */; };
 		BAE5745A2ADE94430003A8D0 /* Speecher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE574592ADE94430003A8D0 /* Speecher.swift */; };
 		BAE5745B2ADE94430003A8D0 /* Speecher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE574592ADE94430003A8D0 /* Speecher.swift */; };
+		BAE8E1F72AEA2D67000CFFDD /* ExportRidingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE8E1F62AEA2D67000CFFDD /* ExportRidingData.swift */; };
+		BAE8E1F82AEA2D67000CFFDD /* ExportRidingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE8E1F62AEA2D67000CFFDD /* ExportRidingData.swift */; };
+		BAE8E1F92AEA2D67000CFFDD /* ExportRidingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE8E1F62AEA2D67000CFFDD /* ExportRidingData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,7 +152,6 @@
 		BA27B9412AD373E9006E442B /* TurnYawingSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnYawingSide.swift; sourceTree = "<group>"; };
 		BA27B9452AD37455006E442B /* TurnSwitchingDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSwitchingDirection.swift; sourceTree = "<group>"; };
 		BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSideChangingPeriodFinder.swift; sourceTree = "<group>"; };
-		BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSwitchingTimingFinder.swift; sourceTree = "<group>"; };
 		BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnSwitchingDirectionFinder.swift; sourceTree = "<group>"; };
 		BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteFallLineFinder.swift; sourceTree = "<group>"; };
 		BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffrencialBeforeTurnSwitchedAngle.swift; sourceTree = "<group>"; };
@@ -184,6 +183,7 @@
 		BABEBCB42AD2134400A4E2F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BABEBE432AD2307000A4E2F6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		BAE574592ADE94430003A8D0 /* Speecher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speecher.swift; sourceTree = "<group>"; };
+		BAE8E1F62AEA2D67000CFFDD /* ExportRidingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportRidingData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +251,7 @@
 				BA27B9452AD37455006E442B /* TurnSwitchingDirection.swift */,
 				BA27B9682AD3A563006E442B /* SkiTurnPhase.swift */,
 				BA27B96C2AD3F804006E442B /* BodySideTurnPhase.swift */,
+				BAE8E1F62AEA2D67000CFFDD /* ExportRidingData.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -300,7 +301,6 @@
 			isa = PBXGroup;
 			children = (
 				BA27B94B2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift */,
-				BA27B9502AD38B53006E442B /* TurnSwitchingTimingFinder.swift */,
 				BA27B9542AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift */,
 				BA27B9582AD38E8D006E442B /* AbsoluteFallLineFinder.swift */,
 				BA27B95C2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift */,
@@ -575,6 +575,7 @@
 				BA27B9712AD66386006E442B /* KneeAngle.swift in Sources */,
 				BA27B9592AD38E8D006E442B /* AbsoluteFallLineFinder.swift in Sources */,
 				BA27B9152AD25E50006E442B /* CMDeviceMotion.swift in Sources */,
+				BAE8E1F72AEA2D67000CFFDD /* ExportRidingData.swift in Sources */,
 				BA27B9272AD2D691006E442B /* DeviceMotion.swift in Sources */,
 				BA27B94C2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
 				BAE5745A2ADE94430003A8D0 /* Speecher.swift in Sources */,
@@ -586,7 +587,6 @@
 				BA27B9692AD3A563006E442B /* SkiTurnPhase.swift in Sources */,
 				BA27B9332AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift in Sources */,
 				BA27B8DD2AD253CF006E442B /* UWBMeasuredData.swift in Sources */,
-				BA27B9512AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */,
 				BA27B9032AD25E50006E442B /* Point3D.swift in Sources */,
 				BA27B9552AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */,
 				BA27B9362AD2DEDA006E442B /* BoardMotionManager.swift in Sources */,
@@ -620,8 +620,8 @@
 				BA27B9042AD25E50006E442B /* Point3D.swift in Sources */,
 				BA27B91C2AD25E50006E442B /* CurrentTimeCalculatorFromSystemUpTimeAndSystemBootedTime.swift in Sources */,
 				BA27B9622AD39E56006E442B /* SkiTurnPhaseAnalyzer.swift in Sources */,
-				BA27B9522AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */,
 				BA27B9432AD373E9006E442B /* TurnYawingSide.swift in Sources */,
+				BAE8E1F82AEA2D67000CFFDD /* ExportRidingData.swift in Sources */,
 				BA27B9722AD66386006E442B /* KneeAngle.swift in Sources */,
 				BA27B90D2AD25E50006E442B /* CMAcceleration.swift in Sources */,
 				BA27B94D2AD38A16006E442B /* TurnSideChangingPeriodFinder.swift in Sources */,
@@ -660,10 +660,10 @@
 				BA27B96F2AD3F804006E442B /* BodySideTurnPhase.swift in Sources */,
 				BA27B9442AD373E9006E442B /* TurnYawingSide.swift in Sources */,
 				BA27B9052AD25E50006E442B /* Point3D.swift in Sources */,
-				BA27B9532AD38B53006E442B /* TurnSwitchingTimingFinder.swift in Sources */,
 				BA27B95F2AD3940E006E442B /* DiffrencialBeforeTurnSwitchedAngle.swift in Sources */,
 				BA27B9372AD2DEDA006E442B /* BoardMotionManager.swift in Sources */,
 				BA27B8D52AD23F6C006E442B /* MPCManager.swift in Sources */,
+				BAE8E1F92AEA2D67000CFFDD /* ExportRidingData.swift in Sources */,
 				BA27B8D22AD2389A006E442B /* MPCSession.swift in Sources */,
 				BA27B8D92AD249D1006E442B /* MPCNIDelegateManager.swift in Sources */,
 			);
@@ -935,7 +935,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BodySideAnalyzer/Preview Content\"";
-				DEVELOPMENT_TEAM = X4RPB4Q33M;
+				DEVELOPMENT_TEAM = YG69W9J287;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BodySideAnalyzer/Info.plist;
@@ -968,7 +968,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BodySideAnalyzer/Preview Content\"";
-				DEVELOPMENT_TEAM = X4RPB4Q33M;
+				DEVELOPMENT_TEAM = YG69W9J287;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BodySideAnalyzer/Info.plist;

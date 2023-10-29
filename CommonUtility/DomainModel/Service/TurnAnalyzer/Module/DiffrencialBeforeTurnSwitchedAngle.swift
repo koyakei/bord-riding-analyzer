@@ -7,18 +7,32 @@
 
 import Foundation
 import Spatial
-struct DiffrencialBeforeTurnSwitchedAngle {
-    var lastTurnSwitchAngle: Rotation3D = Rotation3D()
+class DiffrencialBeforeTurnSwitchedAngle {
+    var lastTurnSwitchAngle: Rotation3D = Rotation3D(){
+        willSet{
+            beforeLastTurnSwitchAngle = lastTurnSwitchAngle
+        }
+    }
+    var beforeLastTurnSwitchAngle: Rotation3D = Rotation3D()
     
-    mutating func switched (currentAttitude : Rotation3D){
+    var beforeDiffrencial : Rotation3D{
+        get {
+            lastTurnSwitchAngle * beforeLastTurnSwitchAngle.inverse
+        }
+    }
+    // 今の違いの絶対値　/ 前のいちターンの違い絶対値
+    func turnPercentageBy3dAngleDiff(currentAttitude : Rotation3D) -> Double{
+        currentDiffrencial(currentAttitude : currentAttitude).angle.degrees /
+            beforeDiffrencial.angle.degrees
+    }
+    
+    // 代入だけなら関数である必要ないだろ
+    func switched (currentAttitude : Rotation3D){
         lastTurnSwitchAngle = currentAttitude
     }
     
-    func currentYawingDiffrencial(currentAttitude : Rotation3D) -> Angle2D{
-        Angle2D(radians: (currentAttitude * lastTurnSwitchAngle.inverse).eulerAngles(order: .xyz).angles.z)
-    }
     
-    func currentDiffrencial(currentAttitude : Rotation3D) -> Angle2D{
-        (currentAttitude * lastTurnSwitchAngle.inverse).angle
+    func currentDiffrencial(currentAttitude : Rotation3D)-> Rotation3D{
+        (currentAttitude * lastTurnSwitchAngle.inverse)
     }
 }

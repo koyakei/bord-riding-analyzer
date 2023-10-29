@@ -16,7 +16,7 @@ protocol UwbMeasuredMutatingDelegate {
     mutating func measured( uwbMeasuredData: UWBMeasuredData)
 }
 class MPCNIDelegateManager :NSObject, NISessionDelegate ,ObservableObject{
-
+    
     enum DistanceDirectionState {
         case closeUpInFOV, notCloseUpInFOV, outOfFOV, unknown
     }
@@ -34,15 +34,36 @@ class MPCNIDelegateManager :NSObject, NISessionDelegate ,ObservableObject{
     var uwbMeasuredMutatingDelegate :UwbMeasuredMutatingDelegate?
     @Published var uwbMeasuredData : UWBMeasuredData? = nil{
         didSet {
-            if var uwbMeasuredData = uwbMeasuredData {
+            if let uwbMeasuredData = uwbMeasuredData {
                 uwbMeasuredHandler.map {
                     handler in
-                        handler( uwbMeasuredData, self.mpc)
+                    handler( uwbMeasuredData, self.mpc)
                 }
                 uwbMeasuredMutatingDelegate?.measured(uwbMeasuredData: uwbMeasuredData)
             }else if uwbMeasuredData == nil {
                 playNotificationSound()
             }
+        }
+    }
+    
+    var uwbMeasuredDatas : [UWBMeasuredData] = []{
+        didSet{
+            if uwbMeasuredDatas.count > 1500 {
+                uwbMeasuredDatas.removeFirst(uwbMeasuredDatas.count - 1500)
+            }
+        }
+    }
+    
+    var fps :Int{
+        get{
+            if let newestTimestamp  = uwbMeasuredDatas.last?.timeStamp{
+                uwbMeasuredDatas.filter {
+                    $0.timeStamp > (newestTimestamp - 1)
+                }.count
+            } else {
+                0
+            }
+            
         }
     }
     
@@ -65,15 +86,20 @@ class MPCNIDelegateManager :NSObject, NISessionDelegate ,ObservableObject{
         shareMyDiscoveryToken()
         
     }
-
+    
     // MARK: - `NISessionDelegate`.
     func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
         nearbyObjects.map{
             object in
-            self.uwbMeasuredData = try? UWBMeasuredData(niObject: object)
+            if let data :UWBMeasuredData = try? UWBMeasuredData(niObject: object){
+                self.uwbMeasuredData = data
+                uwbMeasuredDatas.append(data)
+            } else {
+                self.uwbMeasuredData = nil
+            }
         }
     }
-
+    
     func session(_ session: NISession, didRemove nearbyObjects: [NINearbyObject], reason: NINearbyObject.RemovalReason) {
         guard let peerToken = peerDiscoveryToken else {
             fatalError("don't have peer token")
@@ -82,13 +108,13 @@ class MPCNIDelegateManager :NSObject, NISessionDelegate ,ObservableObject{
         let peerObj = nearbyObjects.first { (obj) -> Bool in
             return obj.discoveryToken == peerToken
         }
-
+        
         if peerObj == nil {
             return
         }
-
+        
         currentDistanceDirectionState = .unknown
-
+        
         switch reason {
         case .peerEnded:
             // The peer token is no longer valid.
@@ -115,12 +141,12 @@ class MPCNIDelegateManager :NSObject, NISessionDelegate ,ObservableObject{
             fatalError("Unknown and unhandled NINearbyObject.RemovalReason")
         }
     }
-
+    
     func sessionWasSuspended(_ session: NISession) {
         currentDistanceDirectionState = .unknown
         updateInformationLabel(description: "Session suspended")
     }
-
+    
     func sessionSuspensionEnded(_ session: NISession) {
         // Session suspension ended. The session can now be run again.
         if let config = self.session.configuration {
@@ -129,57 +155,53 @@ class MPCNIDelegateManager :NSObject, NISessionDelegate ,ObservableObject{
             // Create a valid configuration.
             startup()
         }
-
+        
         centerInformationLabel = peerDisplayName
     }
-
+    
     func session(_ session: NISession, didInvalidateWith error: Error) {
-
-
+        
+        
         // Recreate a valid session.
         startup()
     }
-
+    
     func disconnectedFromPeer() {
         let peer = mpc.mcSession.myPeerID
         if connectedPeer == peer {
             sharedTokenWithPeer = false
         }
     }
-
+    
     func dataReceivedHandler(data: Data, peer: MCPeerID) {
         if let discoveryToken = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NIDiscoveryToken.self, from: data) {
             peerDidShareDiscoveryToken(peer: peer, token: discoveryToken)
         }
     }
-
+    
     func shareMyDiscoveryToken() {
-        
         if let encodedData = try?  NSKeyedArchiver.archivedData(withRootObject: session.discoveryToken, requiringSecureCoding: true) {
             mpc.sendDataToAllPeers(data: encodedData)
             sharedTokenWithPeer = true
         }
     }
-
+    
     func peerDidShareDiscoveryToken(peer: MCPeerID, token: NIDiscoveryToken) {
         // Create a configuration.
         peerDiscoveryToken = token
-
         let config = NINearbyPeerConfiguration(peerToken: token)
-
         // Run the session.
         session.run(config)
     }
-
-
+    
+    
     func getDistanceDirectionState(from nearbyObject: NINearbyObject) -> DistanceDirectionState {
         if nearbyObject.distance == nil && nearbyObject.direction == nil {
             return .unknown
         }
-
         return .outOfFOV
     }
-
+    
     private func animate(from currentState: DistanceDirectionState, to nextState: DistanceDirectionState, with peer: NINearbyObject) {
         
     }
@@ -188,16 +210,14 @@ class MPCNIDelegateManager :NSObject, NISessionDelegate ,ObservableObject{
         // Invoke haptics on "peekaboo" or on the first measurement.
         if currentState == .notCloseUpInFOV && nextState == .closeUpInFOV || currentState == .unknown {
         }
-
+        
         // Animate into the next visuals.
         UIView.animate(withDuration: 0.3, animations: {
             self.animate(from: currentState, to: nextState, with: peer)
         })
     }
-
+    
     func updateInformationLabel(description: String) {
-        
-            self.centerInformationLabel = description
-        
+        self.centerInformationLabel = description
     }
 }

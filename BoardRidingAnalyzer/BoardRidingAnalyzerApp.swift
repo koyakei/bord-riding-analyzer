@@ -8,15 +8,15 @@
 import SwiftUI
 import MultipeerConnectivity
 import Spatial
+import WatchConnectivity
 @main
 struct BoardRidingAnalyzerApp: App {
     var mpcManager : MPCManager = MPCManager()
     var mPCNIDelegateManager : MPCNIDelegateManager
     var uwbRepository:  UWBDataRepository = UWBDataRepository()
-    var boardSideBodyMotionReciever:BoardSideBodyMotionReciever
+    var boardSideBodyMotionReciever: BoardSideBodyMotionReciever
     var boardMotionManager : BoardMotionManager
-    var inclineCoM = InclineCoM()
-    
+    var inclineCoM = InclineCoM(exportRidingData: ExportRidingData())
     init(){
         boardMotionManager = BoardMotionManager( inclineCoM: &inclineCoM)
         mPCNIDelegateManager = MPCNIDelegateManager(
@@ -29,12 +29,13 @@ struct BoardRidingAnalyzerApp: App {
             recieveUWB
         )
         mPCNIDelegateManager.uwbMeasuredHandler.append(receiveUWBMeasuredData)
-        boardMotionManager.skiTurnAnalyzer.turnSwitchedHandler.append(
+        boardMotionManager.skiTurnAnalyzer.turnSideChangingPeriodFinder.turnSwitchedReceiver.append(
             boardSideBodyMotionReciever.turnSwitched
         )
-        boardMotionManager.skiTurnAnalyzer.turnSwitchedHandler.append(
+        boardMotionManager.skiTurnAnalyzer.turnSideChangingPeriodFinder.turnSwitchedReceiver.append(
             boardMotionManager.turnSwitched
         )
+        // icm 記録する場所を探そう
     }
     
     func receiveUWBMeasuredData(data: UWBMeasuredData,_: MPCSession){

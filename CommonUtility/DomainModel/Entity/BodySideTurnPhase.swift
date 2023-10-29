@@ -15,15 +15,15 @@ protocol BodySideTurnPhaseProtocol :DeviceMotionProtocol , UWBMeasuredDataProtoc
 
 extension BodySideTurnPhaseProtocol{
     
-    var スキーに垂直な方向の加速度掛ける時間: Double{
+    var スキーに垂直な方向の加速度掛けるmillSecond: Double{
         get {
-            スキーに垂直方向の加速度 * ( timeStamp - beforeTimeStapm)
+            スキーに垂直方向の加速度 * ( timeStamp - beforeTimeStapm) * 1000
         }
     }
     
     var スキーに垂直方向の加速度 : Double {
         get {
-            direction.normalized.dot( userAcceleration + gravity)
+            direction.normalized.dot( userAcceleration + gravity )
         }
     }
     
@@ -57,18 +57,29 @@ struct BodySideTurnPhase: BodySideTurnPhaseProtocol, UWBMeasuredDataProtocol,Cod
     
     var timeStamp: TimeInterval
     
+    var deviceTimeStamp: TimeInterval = Date.now.timeIntervalSince1970
+    {
+        willSet{
+            timeStamp = deviceTimeStamp
+        }
+    }
+    var distanceTimeStamp: TimeInterval = Date.now.timeIntervalSince1970{
+        willSet{
+            timeStamp = distanceTimeStamp
+        }
+    }
     mutating func recieveMotion(deviceMotion : DeviceMotion){
         attitude = deviceMotion.attitude
         rotationRate = deviceMotion.rotationRate
         userAcceleration = deviceMotion.userAcceleration
-        timeStamp = deviceMotion.timeStamp
+        deviceTimeStamp = deviceMotion.timeStamp
         gravity = deviceMotion.gravity
         beforeTimeStapm = timeStamp
     }
     
     mutating func recieveDistance(distance : UWBMeasuredData){
         direction = distance.direction
-        timeStamp = distance.timeStamp
+        distanceTimeStamp = distance.timeStamp
         beforeTimeStapm = timeStamp
     }
 }

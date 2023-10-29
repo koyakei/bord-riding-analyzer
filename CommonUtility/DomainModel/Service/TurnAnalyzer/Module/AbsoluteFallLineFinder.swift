@@ -22,9 +22,8 @@ struct AbsoluteFallLineFinder {
             absoluteAttitudeRecords.removeFirst()
         }
         absoluteAttitudeRecords.append(QuaternionRecord.init(simd_quatd: quaternion, timeStamp: timeStampSince1970))
-        let yq = Rotation3D(absoluteAttitudeRecords.yawYawingMovingAverage(yawingPeriod: yawingPeriod))
-        yawingMovingAverage = yq
-        return yq
+        yawingMovingAverage = Rotation3D(absoluteAttitudeRecords.yawYawingMovingAverage(yawingPeriod: yawingPeriod))
+        return yawingMovingAverage
     }
 }
 
@@ -39,16 +38,16 @@ protocol QuaternionFProtocol : TimeStamp {
 extension Collection where Element: QuaternionFProtocol {
     func yawYawingMovingAverage(yawingPeriod: TimeInterval) -> simd_quatd {
         self.filterByBeforeMilleSecondsFromNow(timeInterval: yawingPeriod).map {
-            $0.simd_quatd}.reduce(simd_quatd(ix: 0,iy: 0,iz: 0,r: 0),+).normalized
+            $0.simd_quatd}.reduce(simd_quatd(ix: .zero,iy: .zero,iz: .zero,r: .zero),+).normalized
     }
 }
 
 // 時刻　向き　加速度　rotation_rate
 extension Collection where Element: TimeStamp {
     func filterByBeforeMilleSecondsFromNow(
-            timeInterval: TimeInterval) -> [Element] {
-        self.filter {
-            $0.timeStamp > ($0.timeStamp - timeInterval)
+        timeInterval: TimeInterval) -> [Element] {
+            self.filter {
+                $0.timeStamp > ($0.timeStamp - timeInterval)
+            }
         }
-    }
 }

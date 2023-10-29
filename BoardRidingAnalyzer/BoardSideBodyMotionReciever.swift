@@ -7,19 +7,19 @@
 
 import Foundation
 import MultipeerConnectivity
-
+import Spatial
 class BoardSideBodyMotionReciever : ObservableObject{
     var mpcManager : MPCManager
     @Published var bodySideTurnPhase: BodySideTurnPhase? = nil
     
     var beforeOneTurnAT: Double {
         get{
-            oneTurnDeviceMotions.map{$0.スキーに垂直な方向の加速度掛ける時間}.reduce(0,+)
+            oneTurnDeviceMotions.map{$0.スキーに垂直な方向の加速度掛けるmillSecond}.reduce(0,+)
         }
     }
     var oneTurnDeviceMotions: [BodySideTurnPhase] = []
     
-    func turnSwitched(){
+    func turnSwitched(currentAttitude : Rotation3D){
         oneTurnDeviceMotions.removeAll()
     }
     

@@ -14,58 +14,10 @@
             filePath = "BoardRidingAnalyzer Watch App/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "unknown"
             landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "09A01A9A-CC4D-40D0-9BCC-506442424D1C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CommonUtility/Network/NotWatch/UWB/MPCNIDelegateManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "session(_:didUpdate:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "09A01A9A-CC4D-40D0-9BCC-506442424D1C - 640da6f80b44f44d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.NINearbyObject) -&gt; () in BoardRidingAnalyzer.MPCNIDelegateManager.session(_: __C.NISession, didUpdate: Swift.Array&lt;__C.NINearbyObject&gt;) -&gt; ()"
-                  moduleName = "BoardRidingAnalyzer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/koyanagi/BoardRidingAnalyzer/CommonUtility/Network/NotWatch/UWB/MPCNIDelegateManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "09A01A9A-CC4D-40D0-9BCC-506442424D1C - a953f97688308eb8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BodySideAnalyzer.MPCNIDelegateManager.session(_: __C.NISession, didRemove: Swift.Array&lt;__C.NINearbyObject&gt;, reason: __C.NINearbyObjectRemovalReason) -&gt; ()"
-                  moduleName = "BodySideAnalyzer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/koyanagi/BoardRidingAnalyzer/CommonUtility/Network/NotWatch/UWB/MPCNIDelegateManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "356">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -193,6 +145,301 @@
             endingLineNumber = "11"
             landmarkName = "UWBDataRepository"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0DAF637-DFC3-4238-83E4-009130B65812"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoardRidingAnalyzer Watch App/BoardRidingAnalyzerApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "006DAE40-EA4D-45CD-94A2-1E9C6F75C81F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonUtility/DomainModel/Service/TurnAnalyzer/SkiTurnPhaseAnalyzer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "handle(deviceMotion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "006DAE40-EA4D-45CD-94A2-1E9C6F75C81F - 873161ccb67bd6a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BoardRidingAnalyzer.SkiTurnPhaseAnalyzer.handle(deviceMotion: BoardRidingAnalyzer.DeviceMotion) -&gt; BoardRidingAnalyzer.SkiTurnPhase"
+                  moduleName = "BoardRidingAnalyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyanagi/BoardRidingAnalyzer/CommonUtility/DomainModel/Service/TurnAnalyzer/SkiTurnPhaseAnalyzer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "006DAE40-EA4D-45CD-94A2-1E9C6F75C81F - 873161ccb67bd6a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BoardRidingAnalyzer.SkiTurnPhaseAnalyzer.handle(deviceMotion: BoardRidingAnalyzer.DeviceMotion) -&gt; BoardRidingAnalyzer.SkiTurnPhase"
+                  moduleName = "BoardRidingAnalyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyanagi/BoardRidingAnalyzer/CommonUtility/DomainModel/Service/TurnAnalyzer/SkiTurnPhaseAnalyzer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "536">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27417F96-C64A-477A-AAC3-30010B907B06"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonUtility/DomainModel/Service/TurnAnalyzer/Module/InclineCoM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "receiveDeviceMotion(motion:skiTurnPhase:)"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent>
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A1188E9-E51D-4C46-AE0A-AA92F07CEEB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoardRidingAnalyzer/BoardMotionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23B02476-962B-4474-956C-FFE3C25C20B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonUtility/DomainModel/Service/TurnAnalyzer/Module/TurnSideChangingPeriodFinder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "recieveMotion(rotationRate:timeInterval:currentAttitude:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5A5367F-2A93-4FE7-8A33-AEC6093D7BD3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonUtility/DomainModel/Service/TurnAnalyzer/Module/TurnSideChangingPeriodFinder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "recieveMotion(rotationRate:timeInterval:currentAttitude:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9D201A2-2BFB-490B-B673-F3801CBB49A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonUtility/DomainModel/Service/TurnAnalyzer/Module/TurnSideChangingPeriodFinder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "recieveMotion(rotationRate:timeInterval:currentAttitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F9D201A2-2BFB-490B-B673-F3801CBB49A7 - 1f58a6c5073576ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BoardRidingAnalyzer.TurnSideChangingPeriodFinder.recieveMotion(rotationRate: __C.SPVector3D, timeInterval: Swift.Double) -&gt; Swift.Bool"
+                  moduleName = "BoardRidingAnalyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyanagi/BoardRidingAnalyzer/CommonUtility/DomainModel/Service/TurnAnalyzer/Module/TurnSideChangingPeriodFinder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "F9D201A2-2BFB-490B-B673-F3801CBB49A7 - c3d5110f260590d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (() -&gt; ()) -&gt; () in BoardRidingAnalyzer.TurnSideChangingPeriodFinder.recieveMotion(rotationRate: __C.SPVector3D, timeInterval: Swift.Double) -&gt; Swift.Bool"
+                  moduleName = "BoardRidingAnalyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyanagi/BoardRidingAnalyzer/CommonUtility/DomainModel/Service/TurnAnalyzer/Module/TurnSideChangingPeriodFinder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84B29296-5DDE-49B9-A738-09A81293C7EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoardRidingAnalyzer/BoardSideBodyMotionReciever.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "boardDeviceMotionReciever(data:peer:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "84B29296-5DDE-49B9-A738-09A81293C7EF - e365737060368698"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BodySideAnalyzer.BoardSideBodyMotionReciever.boardDeviceMotionReciever(data: Foundation.Data, peer: __C.MCPeerID) -&gt; ()"
+                  moduleName = "BodySideAnalyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyanagi/BoardRidingAnalyzer/BoardRidingAnalyzer/BoardSideBodyMotionReciever.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1768">
+               </Location>
+               <Location
+                  uuid = "84B29296-5DDE-49B9-A738-09A81293C7EF - 12cba05e65ff9f6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BoardRidingAnalyzer.BoardSideBodyMotionReciever.boardDeviceMotionReciever(data: Foundation.Data, peer: __C.MCPeerID) -&gt; ()"
+                  moduleName = "BoardRidingAnalyzer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyanagi/BoardRidingAnalyzer/BoardRidingAnalyzer/BoardSideBodyMotionReciever.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1768">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5D4DC4D-A851-41C5-894A-C7C210A33E8B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoardRidingAnalyzer/BoardSideBodyMotionReciever.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "turnSwitched(currentAttitude:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3323C61A-13DF-48C9-9673-0D4EE408AB66"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoardRidingAnalyzer/BoardSideBodyMotionReciever.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "boardDeviceMotionReciever(data:peer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C03B6703-2E75-4DCE-A565-839503CA9435"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BodySideAnalyzer/BodySideAnalyzerApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "reciever(motion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2CD572C-54B5-4D96-A591-72DC87999EA9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonUtility/DomainModel/Service/TurnAnalyzer/Module/DiffrencialBeforeTurnSwitchedAngle.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "switched(currentAttitude:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

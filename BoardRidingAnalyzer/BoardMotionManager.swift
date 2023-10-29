@@ -8,11 +8,11 @@
 import Foundation
 import CoreMotion
 import MultipeerConnectivity
-
+import Spatial
 class BoardMotionManager :ObservableObject {
     let coremotionManager = CMMotionManager()
     var skiTurnAnalyzer = SkiTurnPhaseAnalyzer()
-    var inclineCom: InclineCoM
+    @Published var inclineCom: InclineCoM
     init (inclineCoM: inout InclineCoM){
         self.inclineCom = inclineCoM
     }
@@ -21,7 +21,7 @@ class BoardMotionManager :ObservableObject {
     @Published var いちターンでの谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか: Double = 0
     var 内倒音声読み上げ = false
     var いちターンでの谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか音声読み上げ = false
-    func turnSwitched(){
+    func turnSwitched(currentAttitude : Rotation3D){
         self.beforeいちターンでの内倒合計 = inclineCoMs.いちターンでの内倒合計()
         self.いちターンでの谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか = inclineCoMs.いちターンでの谷に落とすのに失敗していることでどれだけ板がズレて減速したがっているか()
         inclineCoMs.removeAll()

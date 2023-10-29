@@ -49,9 +49,5 @@ struct UWBMeasuredData: Codable ,UWBMeasuredDataProtocol{
             throw MyError.negativeValue
         }
     }
-    
-    init(vector3D :Vector3D) {
-        self.direction = vector3D
-        self.timeStamp = Date.now.timeIntervalSince1970
-    }
+   
 }

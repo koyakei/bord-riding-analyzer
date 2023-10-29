@@ -6,30 +6,38 @@
 //
 
 import Foundation
-
+import Spatial
 
 struct TurnSideChangingPeriodFinder{
-    var lastSwitchedTurnSideTimeStamp: TimeInterval = Date.now.timeIntervalSince1970
-    var period: TimeInterval = TimeInterval.zero
-    let minTurnPeriod = 0.7
-    func isOverMinTurnPeriod() -> Bool {
-        period > minTurnPeriod
-    }
-    var turnSwitchedReceiver: [(()-> Void)] = []
-    
-    mutating func handle(currentTimeStampSince1970: TimeInterval) ->TimeInterval{
-        period = currentTimeStampSince1970 - lastSwitchedTurnSideTimeStamp
-//       if (isTurnSwitching)  {
-//            lastSwitchedTurnSideTimeStamp = currentTimeStampSince1970
-//        }
-        return period
-    }
-    
-    mutating func turnSwitched(currentTimeStampSince1970: TimeInterval){
-        lastSwitchedTurnSideTimeStamp = currentTimeStampSince1970
-        turnSwitchedReceiver.map{
-            handler in
-            handler()
+    var lastSwitchedTurnSideTimeStamp: TimeInterval = Date.now.timeIntervalSince1970{
+        willSet{
+            beforelastSwitchedTurnSideTimeStamp = lastSwitchedTurnSideTimeStamp
         }
+    }
+    private var beforelastSwitchedTurnSideTimeStamp: TimeInterval = Date.now.timeIntervalSince1970 - 2
+    var period: TimeInterval {
+        get{
+            lastSwitchedTurnSideTimeStamp - beforelastSwitchedTurnSideTimeStamp
+        }
+    }
+    
+    let minTurnPeriod : TimeInterval = 0.8
+    let ターン切り替え時とみなす最大角速度 = 5.0
+    func isOverMinTurnPeriod(timeStamp: TimeInterval) -> Bool {
+        (timeStamp - lastSwitchedTurnSideTimeStamp) > minTurnPeriod
+    }
+    var turnSwitchedReceiver: [((Rotation3D)-> Void)] = []
+    
+    mutating func recieveMotion(rotationRate: Vector3D, timeInterval : TimeInterval,currentAttitude : Rotation3D)-> Bool{
+        let res = abs(rotationRate.z) < Angle2D(degrees: ターン切り替え時とみなす最大角速度).radians
+        && isOverMinTurnPeriod(timeStamp: timeInterval)
+        if res {
+            lastSwitchedTurnSideTimeStamp = timeInterval
+            turnSwitchedReceiver.map{
+                handler in
+                handler(currentAttitude)
+            }
+        }
+        return res
     }
 }

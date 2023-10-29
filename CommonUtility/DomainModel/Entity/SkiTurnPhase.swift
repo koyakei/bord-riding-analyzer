@@ -21,6 +21,9 @@ struct SkiTurnPhase : TimeStamp,DeviceMotionProtocol{
     let fallLine : Rotation3D
     
     let turnYawingSide: TurnYawingSide
+    
+    let turnPeriod: TimeInterval
+    let diffPercentage: Double
 }
 
 

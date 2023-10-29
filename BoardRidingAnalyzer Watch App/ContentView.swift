@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
-
+import WatchConnectivity
 struct ContentView: View {
+    @StateObject var session : SessionDelegator
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("膝の角度")
+            
+            Text("内倒度合い")
+            Text(session.内倒.f2)
+            Text("FPS")
+            Text(session.lastUpdated.description)
         }
         .padding()
     }
