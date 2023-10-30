@@ -12,19 +12,19 @@ import Spatial
 extension Point3D {
     var realDistanceX: Measurement<UnitLength> {
         get{
-            Measurement(value: self.x, unit: .meters)
+            Measurement(value: x, unit: .meters)
         }
     }
     
     var realDistanceY: Measurement<UnitLength> {
         get{
-            Measurement(value: self.y, unit: .meters)
+            Measurement(value: y, unit: .meters)
         }
     }
     
     var realDistanceZ: Measurement<UnitLength> {
         get{
-            Measurement(value: self.z, unit: .meters)
+            Measurement(value: z, unit: .meters)
         }
     }
     

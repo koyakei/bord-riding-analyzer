@@ -12,16 +12,13 @@ import Spatial
 extension CMQuaternion{
     var simdQuat : simd_quatd {
         get {
-            return simd_quatd(ix: self.x,
-                              iy: self.y,
-                              iz: self.z,
-                              r: self.w)
+            simd_quatd(vector: [x,y,z,w])
         }
     }
     
     var rotation3D : Rotation3D {
         get {
-            Rotation3D(self.simdQuat)
+            Rotation3D(simdQuat)
         }
     }
 }
