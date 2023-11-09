@@ -22,3 +22,11 @@ extension CMQuaternion{
         }
     }
 }
+
+extension simd_quatd {
+    var simdQuatF : simd_quatf{
+        get {
+            simd_quatf(vector: [Float(vector.x),Float(vector.y),Float(vector.z),Float(vector.w)])
+        }
+    }
+}

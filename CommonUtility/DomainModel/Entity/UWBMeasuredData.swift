@@ -41,6 +41,7 @@ struct UWBMeasuredData: Codable ,UWBMeasuredDataProtocol{
     let direction: Vector3D
     let timeStamp: TimeInterval
     
+    
     init(niObject: NINearbyObject) throws{
         if let locationVector3D = niObject.locationVector3D {
             self.timeStamp = Date.now.timeIntervalSince1970

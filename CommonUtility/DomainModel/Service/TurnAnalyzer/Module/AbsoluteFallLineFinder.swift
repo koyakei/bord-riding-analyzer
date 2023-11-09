@@ -15,12 +15,19 @@ struct AbsoluteFallLineFinder {
         var simd_quatd: simd_quatd
         var timeStamp: TimeInterval
     }
-    var absoluteAttitudeRecords: [QuaternionRecord] = []
-    var yawingMovingAverage: Rotation3D = Rotation3D()
-    mutating func handle(quaternion: simd_quatd, timeStampSince1970: TimeInterval, yawingPeriod: TimeInterval) -> Rotation3D {
-        if absoluteAttitudeRecords.count > 500{
-            absoluteAttitudeRecords.removeFirst()
+    let maxLength = 500
+    var absoluteAttitudeRecords: [QuaternionRecord] = []{
+        didSet{
+            if absoluteAttitudeRecords.count > maxLength {
+                let startIndex = absoluteAttitudeRecords.count - maxLength
+                absoluteAttitudeRecords.removeSubrange(0..<startIndex)
+            }
         }
+    }
+    
+    var yawingMovingAverage: Rotation3D = Rotation3D()
+    
+    mutating func handle(quaternion: simd_quatd, timeStampSince1970: TimeInterval, yawingPeriod: TimeInterval) -> Rotation3D {
         absoluteAttitudeRecords.append(QuaternionRecord.init(simd_quatd: quaternion, timeStamp: timeStampSince1970))
         yawingMovingAverage = Rotation3D(absoluteAttitudeRecords.yawYawingMovingAverage(yawingPeriod: yawingPeriod))
         return yawingMovingAverage

@@ -24,6 +24,14 @@ protocol DeviceMotionProtocol : TimeStamp {
     var gravity: Vector3D {get}
 }
 
+extension DeviceMotionProtocol {
+    var スマホの表裏:Bool{
+        get{
+            Vector3D(z: 1).rotated(by: attitude).dot(Vector3D(z:1)) > 0
+        }
+    }
+}
+
 extension Vector3D {
     var yawingSide: TurnYawingSide {
         get{

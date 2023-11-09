@@ -870,6 +870,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BoardRidingAnalyzer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BoardRidingAnalyzer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -905,6 +906,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BoardRidingAnalyzer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BoardRidingAnalyzer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -935,10 +937,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BodySideAnalyzer/Preview Content\"";
-				DEVELOPMENT_TEAM = YG69W9J287;
+				DEVELOPMENT_TEAM = X4RPB4Q33M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BodySideAnalyzer/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bt;
+				INFOPLIST_KEY_NSCameraUsageDescription = ar;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "読み込み許可を求めるメッセージdssa";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "書き込み許可を求めるメッセージ";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = mc;
+				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = motion;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = motion;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -950,7 +960,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = koyakei.BodySideAnalyzer;
+				PRODUCT_BUNDLE_IDENTIFIER = koyakei.BodySideAnalyzer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -968,10 +978,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BodySideAnalyzer/Preview Content\"";
-				DEVELOPMENT_TEAM = YG69W9J287;
+				DEVELOPMENT_TEAM = X4RPB4Q33M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BodySideAnalyzer/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = bt;
+				INFOPLIST_KEY_NSCameraUsageDescription = ar;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "読み込み許可を求めるメッセージdssa";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "書き込み許可を求めるメッセージ";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = mc;
+				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = motion;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = motion;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -983,7 +1001,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = koyakei.BodySideAnalyzer;
+				PRODUCT_BUNDLE_IDENTIFIER = koyakei.BodySideAnalyzer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
