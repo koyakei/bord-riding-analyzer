@@ -86,6 +86,10 @@
 		BA67DC7F2ADD1AEB00214FFC /* InclineCoM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */; };
 		BA67DC802ADD1AEB00214FFC /* InclineCoM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */; };
 		BA67DC812ADD1AEB00214FFC /* InclineCoM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */; };
+		BA74E1A02B00DEA5008BE043 /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74E19F2B00DEA5008BE043 /* SCNVector3.swift */; };
+		BA74E1A12B00DEA5008BE043 /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74E19F2B00DEA5008BE043 /* SCNVector3.swift */; };
+		BA74E1A32B00E2D3008BE043 /* Vector3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74E1A22B00E2D3008BE043 /* Vector3D.swift */; };
+		BA74E1A42B00E2D3008BE043 /* Vector3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74E1A22B00E2D3008BE043 /* Vector3D.swift */; };
 		BABEBC7B2AD2122000A4E2F6 /* BoardRidingAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEBC7A2AD2122000A4E2F6 /* BoardRidingAnalyzerApp.swift */; };
 		BABEBC7D2AD2122100A4E2F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEBC7C2AD2122000A4E2F6 /* ContentView.swift */; };
 		BABEBC7F2AD2122300A4E2F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEBC7E2AD2122300A4E2F6 /* Assets.xcassets */; };
@@ -162,6 +166,8 @@
 		BA27B9752AD7D70D006E442B /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		BA67DC7B2AD9205B00214FFC /* UWBDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBDataRepository.swift; sourceTree = "<group>"; };
 		BA67DC7E2ADD1AEB00214FFC /* InclineCoM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InclineCoM.swift; sourceTree = "<group>"; };
+		BA74E19F2B00DEA5008BE043 /* SCNVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3.swift; sourceTree = "<group>"; };
+		BA74E1A22B00E2D3008BE043 /* Vector3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3D.swift; sourceTree = "<group>"; };
 		BABEBC772AD2122000A4E2F6 /* BoardRidingAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardRidingAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABEBC7A2AD2122000A4E2F6 /* BoardRidingAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardRidingAnalyzerApp.swift; sourceTree = "<group>"; };
 		BABEBC7C2AD2122000A4E2F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -276,6 +282,8 @@
 				BA27B8E22AD25424006E442B /* NINearbyObject.swift */,
 				BA27B9752AD7D70D006E442B /* DoubleExtension.swift */,
 				BAE574592ADE94430003A8D0 /* Speecher.swift */,
+				BA74E19F2B00DEA5008BE043 /* SCNVector3.swift */,
+				BA74E1A22B00E2D3008BE043 /* Vector3D.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -586,6 +594,8 @@
 				BA67DC7F2ADD1AEB00214FFC /* InclineCoM.swift in Sources */,
 				BA27B9692AD3A563006E442B /* SkiTurnPhase.swift in Sources */,
 				BA27B9332AD2DEB0006E442B /* BoardSideBodyMotionReciever.swift in Sources */,
+				BA74E1A32B00E2D3008BE043 /* Vector3D.swift in Sources */,
+				BA74E1A02B00DEA5008BE043 /* SCNVector3.swift in Sources */,
 				BA27B8DD2AD253CF006E442B /* UWBMeasuredData.swift in Sources */,
 				BA27B9032AD25E50006E442B /* Point3D.swift in Sources */,
 				BA27B9552AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */,
@@ -639,6 +649,8 @@
 				BABEBCA72AD2125A00A4E2F6 /* ContentView.swift in Sources */,
 				BA27B9572AD38E4F006E442B /* TurnSwitchingDirectionFinder.swift in Sources */,
 				BA27B9782AD7D70E006E442B /* DoubleExtension.swift in Sources */,
+				BA74E1A42B00E2D3008BE043 /* Vector3D.swift in Sources */,
+				BA74E1A12B00DEA5008BE043 /* SCNVector3.swift in Sources */,
 				BA27B8FC2AD25E50006E442B /* PhysicsConstants.swift in Sources */,
 				BABEBCA52AD2125A00A4E2F6 /* BodySideAnalyzerApp.swift in Sources */,
 				BA27B9172AD25E50006E442B /* CMDeviceMotion.swift in Sources */,
