@@ -125,8 +125,8 @@
             filePath = "BodySideAnalyzer/BodySideAnalyzerApp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "reciever(motion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -414,14 +414,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C03B6703-2E75-4DCE-A565-839503CA9435"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BodySideAnalyzer/BodySideAnalyzerApp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "reciever(motion:)"
             landmarkType = "7">
          </BreakpointContent>

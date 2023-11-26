@@ -28,7 +28,8 @@ struct BodySideAnalyzerApp: App ,BoardMotionReciverDelegate ,UwbMeasuredMutating
     var body: some Scene {
         WindowGroup {
             ContentView(mpcManager: mpcManager,
-                        mPCNIDelegateManager: mPCNIDelegateManager, bodyMotionManager: bodyMotionManager)
+                        mPCNIDelegateManager: mPCNIDelegateManager, bodyMotionManager: bodyMotionManager,
+                        initRotationNorthX: bodyMotionManager.bodySideTurnPhase.attitude)
         }
     }
     

@@ -49,26 +49,27 @@ struct ContentView: View {
         
         return Rotation3D(s)
     }
-    
+    var initRotationNorthX : Rotation3D
+        
     func addSimpleMaterial() {
         // ヨーイングだけ逆にしたい
         
 //        body表示垂直下()
         print("pointing")
         if let dir = mPCNIDelegateManager.uwbMeasuredData?.direction, let pose = Pose3D(arContainer.arView.cameraTransform.matrix){
-            board表示(dir: dir)
-            // フォールライン方向を北としてテスト表示してみる
-            フォールラインから重心迄のフォールライン方向の矢印(ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
-            フォールラインから重心迄のフォールライン方向の矢印1(ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
-//            フォールラインから重心迄のフォールライン方向の矢印2(ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
-//            フォールラインから重心迄のフォールライン方向の矢印3(ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
+//            board表示(dir: dir)
+//            // フォールライン方向を北としてテスト表示してみる
+//            北向き固定(ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
+//            北向き固定2(ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
+            現在位置から前方水平( ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
+            現在位置から前方水平2( ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
+//            現在位置から前方(ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
+            初期方向固定(ボード位置相対dir: dir, フォールライン方向XNoarth: Rotation3D())
             print(Float(dir.length) / 2)
             print(dir)
         }
-        
-        
-       
     }
+    
     func test(color: UIColor, pose: Pose3D,dir: Vector3D){
         let coMEntity =
         AnchorEntity(.world(transform: pose.matrix.float4x4))
@@ -76,57 +77,65 @@ struct ContentView: View {
         arContainer.arView.scene.addAnchor(coMEntity)
     }
     
-    
-    func 原点表示(){
+    func デバイスの存在地点表示(){
         let coMEntity =
         AnchorEntity(world: arContainer.arView.cameraTransform.translation)
         coMEntity.addChild(ModelEntity(mesh: .generateSphere(radius: 0.05),materials: [SimpleMaterial(color: .green, isMetallic: false)]))
         arContainer.arView.scene.addAnchor(coMEntity)
     }
     
-    
-    func フォールラインから重心迄のフォールライン方向の矢印( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
-        let r = bodyMotionManager.bodySideTurnPhase.attitude.quaternion.simdQuatF.vector
-        let r2 = SCNVector4FromGLKVector4(GLKVector4Make(r.x,r.y,r.z,r.w))
+    func eliminateNonXYRotation(quaternion: simd_quatd) -> simd_quatd {
+        // Extract the rotation axis and angle from the quaternion
+        let rotationAxis = quaternion.axis
+        let rotationAngle = quaternion.angle
         
+        // Project the rotation axis onto the XY plane
+        let xyPlaneAxis = simd_make_double3(rotationAxis.x, rotationAxis.y, 0.0)
+        
+        // Create a new quaternion with the projected rotation axis and original angle
+        let newQuaternion = simd_quatd(angle: rotationAngle, axis: xyPlaneAxis)
+        
+        return newQuaternion
+    }
+    
+    func 北向き固定( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
         let 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列 =
-//        Rotation3D(arContainer.arView.cameraTransform.rotation.inverse) * //現在の位置に
-        r2.rotation3D// 北の位置を示すクオータニオンにする　体側XNoarth から回転の逆　回す
-        //　北を向いたらそこからフォールライン方向を北向き基準で回す
+        //現在の位置に
+        eliminateNonXYRotation(quaternion: bodyMotionManager.bodySideTurnPhase.attitude.inverse.quaternion)
+        let r = bodyMotionManager.bodySideTurnPhase.attitude.eulerAngles(order: .xyz).angles
+        let r2 = Rotation3D(eulerAngles: EulerAngles(x: Angle2D(radians: -r.x), y: Angle2D(radians: 0), z: Angle2D(radians: -r.z), order: EulerAngles.Order.xyz))
+   
         let pose = boardPose(dir: ボード位置相対dir)// ボードの位置を計算
-            .rotated(by: 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列)
+            .rotated(by: r2)
+        
         let 内倒度合い矢印 =
         AnchorEntity(.world(transform: pose.matrix.float4x4))
-        // TODO 箱の向きを縦横深さのどれを長軸とするかで調整イウ
+        // TODO　サイズのところで水平にするかな。打地体北向きになったから、水平にするコードを書くか。
         内倒度合い矢印.addChild(ModelEntity(mesh: .generateBox(width: 0.05, height: 0.05, depth:  0.5),materials: [SimpleMaterial(color: .red, isMetallic: false)]))
         arContainer.arView.scene.addAnchor(内倒度合い矢印)
     }
     
-    func フォールラインから重心迄のフォールライン方向の矢印1( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
-        let r = bodyMotionManager.bodySideTurnPhase.attitude.quaternion.simdQuatF.vector
-        let r2 = SCNVector4FromGLKVector4(GLKVector4Make(r.x,r.y,r.z,r.w))
+    func 北向き固定2( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
         let 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列 =
-        Rotation3D(arContainer.arView.cameraTransform.rotation.inverse) * //現在の位置に
-        r2.rotation3D// 北の位置を示すクオータニオンにする　体側XNoarth から回転の逆　回す 北の位置を示すクオータニオンにする　体側XNoarth から回転の逆　回す
-//        * フォールライン方向XNoarth //　北を向いたらそこからフォールライン方向を北向き基準で回す
+        //現在の位置に
+        Rotation3D(arContainer.arView.cameraTransform.rotation.inverse) * initRotationNorthX.inverse
+        // 北の位置を示すクオータニオンにする　体側XNoarth から回転の逆　回す
         
+        //　北を向いたらそこからフォールライン方向を北向き基準で回す
         let pose = boardPose(dir: ボード位置相対dir)// ボードの位置を計算
             .rotated(by: 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列)
+        
         let 内倒度合い矢印 =
         AnchorEntity(.world(transform: pose.matrix.float4x4))
-        // TODO 箱の向きを縦横深さのどれを長軸とするかで調整イウ
-        内倒度合い矢印.addChild(ModelEntity(mesh: .generateBox(width: 0.05, height: 0.05, depth:  0.5),materials: [SimpleMaterial(color: .green, isMetallic: false)]))
+        // TODO　サイズのところで水平にするかな。打地体北向きになったから、水平にするコードを書くか。
+        内倒度合い矢印.addChild(ModelEntity(mesh: .generateBox(width: 0.05, height: 0.05, depth:  0.5),materials: [SimpleMaterial(color: .cyan, isMetallic: false)]))
         arContainer.arView.scene.addAnchor(内倒度合い矢印)
     }
     
-    func フォールラインから重心迄のフォールライン方向の矢印2( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
-        let 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列 = 
-        Rotation3D(arContainer.arView.cameraTransform.rotation) * //現在の位置に
-        convertQuaternion(bodyMotionManager.bodySideTurnPhase.attitude.quaternion).inverse // 北の位置を示すクオータニオンにする　体側XNoarth から回転の逆　回す
-//        * フォールライン方向XNoarth //　北を向いたらそこからフォールライン方向を北向き基準で回す
+    
+    func 現在位置から前方( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
         
         let pose = boardPose(dir: ボード位置相対dir)// ボードの位置を計算
-            .rotated(by: 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列)
         let 内倒度合い矢印 =
         AnchorEntity(.world(transform: pose.matrix.float4x4))
         // TODO 箱の向きを縦横深さのどれを長軸とするかで調整イウ
@@ -134,26 +143,10 @@ struct ContentView: View {
         arContainer.arView.scene.addAnchor(内倒度合い矢印)
     }
     
-    func convertQuaternion(_ quaternion: simd_quatd) -> Rotation3D {
-        // Xが横、Yが前後、Zが縦の座標軸をXが横、Yが縦、Zが前後に変換する回転行列
-        let rotationMatrix = double3x3(rows: [
-            double3(1, 0, 0),
-            double3(0, 0, 1),
-            double3(0, -1, 0)
-        ])
-        
-        // 回転行列からクオータニオンを生成
-        let rotatedQuaternion = simd_quatd(rotationMatrix)
-        
-        // 変換後のクオータニオンを返す
-        return Rotation3D(rotatedQuaternion * quaternion)
-    }
     
-    func フォールラインから重心迄のフォールライン方向の矢印3( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
-        let 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列 = 
-        Rotation3D(arContainer.arView.cameraTransform.rotation) * //現在の位置に
-        convertQuaternion(bodyMotionManager.bodySideTurnPhase.attitude.quaternion).inverse // 北の位置を示すクオータニオンにする　体側XNoarth から回転の逆　回す
-//        * フォールライン方向XNoarth //　北を向いたらそこからフォールライン方向を北向き基準で回す
+    func 初期方向固定( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
+        let 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列 =
+        Rotation3D(arContainer.arView.cameraTransform.rotation.inverse)
         
         let pose = boardPose(dir: ボード位置相対dir)// ボードの位置を計算
             .rotated(by: 現在のスマホのローテーションから見たフォールライン方向に現在の起動時からの相対的回転で回す行列)
@@ -164,6 +157,27 @@ struct ContentView: View {
         arContainer.arView.scene.addAnchor(内倒度合い矢印)
     }
     
+    func 現在位置から前方水平( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
+        let r = bodyMotionManager.bodySideTurnPhase.attitude.eulerAngles(order: .xyz).angles
+        let r2 = Rotation3D(eulerAngles: EulerAngles(x: Angle2D(radians: -r.x), y: Angle2D(radians: 0), z: Angle2D(radians: 0), order: EulerAngles.Order.xyz))
+        let pose = boardPose(dir: ボード位置相対dir).rotated(by: r2)// ボードの位置を計算
+        let 内倒度合い矢印 =
+        AnchorEntity(.world(transform: pose.matrix.float4x4))
+        // TODO 箱の向きを縦横深さのどれを長軸とするかで調整イウ
+        内倒度合い矢印.addChild(ModelEntity(mesh: .generateBox(width: 0.05, height: 0.05, depth:  0.5),materials: [SimpleMaterial(color: .purple, isMetallic: false)]))
+        arContainer.arView.scene.addAnchor(内倒度合い矢印)
+    }
+    
+    func 現在位置から前方水平2( ボード位置相対dir: Vector3D, フォールライン方向XNoarth: Rotation3D){
+        let r = bodyMotionManager.bodySideTurnPhase.attitude.eulerAngles(order: .xyz).angles
+        let r2 = Rotation3D(eulerAngles: EulerAngles(x: Angle2D(radians: r.x), y: Angle2D(radians: 0), z: Angle2D(radians: 0), order: EulerAngles.Order.xyz))
+        let pose = boardPose(dir: ボード位置相対dir).rotated(by: r2)// ボードの位置を計算
+        let 内倒度合い矢印 =
+        AnchorEntity(.world(transform: pose.matrix.float4x4))
+        // TODO 箱の向きを縦横深さのどれを長軸とするかで調整イウ
+        内倒度合い矢印.addChild(ModelEntity(mesh: .generateBox(width: 0.05, height: 0.05, depth:  0.5),materials: [SimpleMaterial(color: .orange, isMetallic: false)]))
+        arContainer.arView.scene.addAnchor(内倒度合い矢印)
+    }
     
     func boardPose(dir: Vector3D)-> Pose3D {
         Pose3D(position: arContainer.arView.cameraTransform.translation, rotation: arContainer.arView.cameraTransform.rotation).translated(by: dir.sceneKitVector.rotated(by: Rotation3D(arContainer.arView.cameraTransform.rotation)))
